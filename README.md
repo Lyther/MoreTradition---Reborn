@@ -16,7 +16,7 @@ Therefore, I will temporarily release a MoreTradition - Reborn mod adapted to th
 
 * [3.6] Brilliant Energy Emitter deals double damage to Battleships and triple damage to Titans, just like other XL slot weapons.
 
-** Planet Decision**
+**Planet Decision**
 
 * [Adjusted] One Mind Tradition: One Mind is no longer limited in duration, but takes effect when enabled until canceled. Removing One Heart Tradition will cost 100 influences and will lose 1 influence for each population on the planet.
 
