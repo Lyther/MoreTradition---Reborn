@@ -1,0 +1,91 @@
+#齐心传统：同心协力
+decision_mt_heart = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_unity_symbol
+	resources = {
+		category = decisions
+		cost = {
+			unity = 1000
+		}
+	}
+	potential = {
+		NOT = {
+			has_modifier = modifiers_mt_heart
+		}
+		owner = {
+			has_tradition = tr_mt_heart_4
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = modifiers_mt_heart
+			days = -1
+		}
+		planet_event = {
+			id = mt_planet_event.1
+		}
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+#齐心传统：移除同心协力
+decision_mt_rm_heart = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_unity_symbol
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+		}
+	}
+	potential = {
+		has_modifier = modifiers_mt_heart
+		owner = {
+			has_tradition = tr_mt_heart_4
+		}
+	}
+	effect = {
+		remove_modifier = modifiers_mt_heart
+	}
+		planet_event = {
+			id = mt_planet_event.2
+		}
+	ai_weight = {
+		weight = 100
+	}
+}
+#文物传统：深入探索
+decision_mt_relic = {
+	owned_planets_only = no
+	sound = event_administrative_work
+	icon = decision_archaeological_dig
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+		}
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_tradition = tr_mt_relic_5
+		}
+		exists = space_owner
+		exists = from
+		space_owner = { is_same_value = from }
+		is_star = no
+		is_artificial = no
+		is_ringworld = no
+		
+	}
+	effect = {
+		#每个考古遗迹都是唯一的，如果随机的考古遗迹已经出现过了，则不会有任何效果。
+		create_archaeological_site = random
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

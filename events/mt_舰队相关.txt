@@ -1,0 +1,97 @@
+namespace = mt_fleet_event
+#紧急舰队
+country_event = {
+	id = mt_fleet_event.1
+	title = mt_fleet_event.1.name
+	desc = mt_fleet_event.1.desc
+	picture = GFX_evt_caravaneers
+	show_sound = select_click
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+	#具体生成舰队
+	immediate = {
+		create_fleet = {
+			name = "紧急舰队"
+			effect = {
+				set_owner = root
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						random_existing_design = corvette
+					}
+				}
+				set_location = root.capital_scope
+			}
+		}
+	}
+	option = {
+		name = mt_fleet_event.1.a
+	}
+}
+#变形虫舰队
+country_event = {
+	id = mt_fleet_event.2
+	title = mt_fleet_event.2.name
+	desc = mt_fleet_event.2.desc
+	picture = GFX_evt_friendly_amoeba
+	show_sound = select_click
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+	#具体生成舰队
+	immediate = {
+		create_fleet = {
+			name = "变形虫舰队"
+			effect = {
+				set_owner = root
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						design = "NAME_Great_Space_Organism"
+					}
+				}
+				set_location = root.capital_scope
+			}
+		}
+	}
+	option = {
+		name = mt_fleet_event.1.a
+	}
+}
+#缇杨奇舰队
+country_event = {
+	id = mt_fleet_event.3
+	title = mt_fleet_event.2.name
+	desc = mt_fleet_event.2.desc
+	picture = GFX_evt_fleet_evil
+	show_sound = select_click
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+	#具体生成舰队
+	immediate = {
+		create_fleet = {
+			name = "缇扬奇舰队"
+			effect = {
+				set_owner = root
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						design = "NAME_Tiyanki_Cow"
+					}
+				}
+				set_location = root.capital_scope
+			}
+		}
+	}
+	option = {
+		name = mt_fleet_event.1.a
+	}
+}
