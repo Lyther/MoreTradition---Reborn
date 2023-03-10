@@ -47,7 +47,7 @@ tradition_mt_preparewar:"备战"
 
  tr_mt_preparewar_adopt:"备战传统"
  tr_mt_preparewar_finish:0 "备战传统完成"
- tr_mt_preparewar_finish_desc:0"§H解锁法令：§!紧急舰队\n§L可以花费合金和凝聚力立刻组建一支护卫舰舰队。§!\n$MOD_COUNTRY_ASCENSION_PERKS_ADD$§G+1§!"
+ tr_mt_preparewar_finish_desc:0"§H解锁法令：§!紧急舰队\n§L可以花费合金和影响力立刻组建一支护卫舰舰队。§!\n$MOD_COUNTRY_ASCENSION_PERKS_ADD$§G+1§!"
 
  tr_mt_preparewar_1:0 "聚焦合金"
  tr_mt_preparewar_1_delayed:0 "在可能的危机来临之前，我们需要尽可能多地冶炼合金，以备不时之需。"
@@ -65,7 +65,7 @@ tradition_mt_preparewar:"备战"
  tr_mt_preparewar_5_delayed:0 "即使是在星际时代，陆军的建设也依旧无比重要，我们必须能够快速进行部署。"
 
  edict_mt_emergencyfleet:0"紧急舰队"
- edict_mt_emergencyfleet_desc:0"消耗一定量的合金和凝聚力，直接在首都星系组建一支护卫舰舰队。该舰队使用已有的随机护卫舰设计，总数为十。"
+ edict_mt_emergencyfleet_desc:0"消耗一定量的合金和影响力，直接在首都星系组建一支护卫舰舰队。该舰队使用已有的随机护卫舰设计，总数为十。"
 
  mt_fleet_event.1.name:0"紧急舰队"
  mt_fleet_event.1.desc:0"临时组建的舰队已经准备就绪，它们现在正处于首都星系"
@@ -118,7 +118,7 @@ tradition_mt_develop:"培养"
  tradition_mt_develop_desc:"领袖指引了人民的前进方向，我们必须确保他们出类拔萃。"
 
  tr_mt_develop_adopt:"培养传统"
- tr_mt_develop_adopt_desc:"领袖维护费:§R-50%§!"
+ tr_mt_develop_adopt_desc:"领袖维护费:§R+50%§!"
  tr_mt_develop_finish:0 "培养传统完成"
 
  tr_mt_develop_1:0 "突破上限"
