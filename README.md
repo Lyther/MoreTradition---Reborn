@@ -29,8 +29,9 @@ Changes that have already been incorporated into the Extra Legacy mod will be re
 
 I've noticed a few issues during play so far, some of which have been fixed, but others have not yet had time to be tweaked.
 
-* English localization translation - 15%
+* English localization translation - 25%
 * The capital's traditions are adapted to events such as capital relocation and loss of capital - 0%
+* Automatically adds artificial psionic and artificial prosthetic traits to all species in the empire - 0%
 
 If you find any other bugs/issues, please feel free to give feedback in the comment section and I will fix them as soon as possible.
 
@@ -77,8 +78,9 @@ Assuming you need to adapt more traditional mods to other great mods, feel free 
 
 目前在游玩过程中我留意到了一些问题，其中一部分进行了修复，但其中另一部分尚未来得及进行调整。
 
-* 英文本地化翻译 - 15%
+* 英文本地化翻译 - 25%
 * 首都传统适配迁都、失去首都等事件 - 0%
+* 自动为帝国内的所有物种添加人工通灵与人工义体特质 - 0%
 
 如果您发现了其他的漏洞/BUG/问题，欢迎在评论区进行反馈，我会尽快修复。
 

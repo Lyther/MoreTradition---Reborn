@@ -10,3 +10,7 @@ l_simp_chinese:
  tech_mt_l_smalllance_desc:0"果然光矛还是应该安装更大型号的能量发生器，以提供更高的输出功率，而如今，我们找到了完美的平衡点。"
  tech_mt_t_smallarc:0"泰坦级辉煌能量发射器"
  tech_mt_t_smallarc_desc:0"真正摧枯拉朽的能量输出效率，能够洞穿宇宙中的一切。"
+
+#齐心
+ decision_mt_rm_heart:0"移除同心协力"
+ decision_mt_rm_heart_desc:0"失去同心协力的加成，同时，每有一个人口将失去1点£influence£影响力。"
