@@ -1,7 +1,9 @@
-l_simp_chinese:
+﻿l_simp_chinese:
 #微缩
  template_mt_largearc:0"小型电弧发射器"
  template_mt_largelance:0"小型光矛"
+ set_mt_titanic_brilliantarc:0"泰坦级辉煌能量发射器"
+ set_mt_titanic_brilliantarc_DESC:0"真正摧枯拉朽的能量输出效率，能够洞穿宇宙中的一切。"
  template_mt_titanic_brilliantarc:0"泰坦级辉煌能量发射器"
 
  tech_mt_l_smallarc:0"小型电弧发射器"

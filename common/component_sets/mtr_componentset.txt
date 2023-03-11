@@ -1,0 +1,7 @@
+#泰坦级辉煌能量发射器
+component_set = {
+	key = "set_mt_titanic_brilliantarc"
+
+	icon = "GFX_ship_mt_smallarc"
+	icon_frame = 1
+}
