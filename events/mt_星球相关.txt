@@ -1,24 +1,7 @@
 namespace = mt_planet_event
-#同心协力
-planet_event = {
-	id = mt_planet_event.1
-	is_triggered_only = yes
-	trigger = {
-	}
-	hide_window = yes
-	#具体效果
-	immediate = {
-		owner = {
-			add_resource = {
-				influence = 1
-				mult = root.trigger:num_pops
-			}
-		}
-	}
-}
 #移除同心协力
 planet_event = {
-	id = mt_planet_event.2
+	id = mt_planet_event.99
 	is_triggered_only = yes
 	trigger = {
 	}
