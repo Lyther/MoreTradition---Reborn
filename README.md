@@ -12,17 +12,27 @@ Changes that have already been incorporated into the Extra Legacy mod will be re
 
 **Planet Decision Making**
 
-* [Tweak] One Heart Tradition: One Heart no longer has a duration limit, but takes effect when it is enabled until it is removed. Removing One Heart Tradition will cost 100 influence and will lose 1 influence for each population on the planet.
+* [Tweak] One Heart Tradition: One Heart no longer has a duration limit, but takes effect when it is enabled until it is removed. Removing One Heart Tradition will cost 100 influences and will lose 1 influence for each population on the planet.
 
 **Population Traits**
 
 * [Tweak] Artificial Psychic/Special Prosthetic traits can be added to Machine and Synthetic populations.
 
+**Traditional**
+
+* Microminiature
+  * [Adjusted] Microscopic Tradition will unlock Microscopic Tech for both S and M slots at once.
+  * [New] Added Microscopic Arc Emitter and Microscopic Light Spear for the L slot.
+  * [New] Microscale Tradition will unlock the Brilliant Energy Emitter in slot T when completed.
+
 ## Issues that are still being fixed
 
-There are a few issues I've noticed during play so far, some of which have been fixed, but others of which have not yet had time to be tweaked.
+I've noticed a few issues during play so far, some of which have been fixed, but others have not yet had time to be tweaked.
 
-If you find any other bugs/bug/issues, please feel free to give feedback in the comment section and I will fix them as soon as possible.
+* English localization translation - 15%
+* The capital's traditions are adapted to events such as capital relocation and loss of capital - 0%
+
+If you find any other bugs/issues, please feel free to give feedback in the comment section and I will fix them as soon as possible.
 
 ## Balance Adjustment
 
@@ -56,9 +66,19 @@ Assuming you need to adapt more traditional mods to other great mods, feel free 
 
 * [调整] 人工通灵/特殊义体特质可以给机器人口与合成人口添加。
 
+**传统**
+
+* 微缩
+  * [调整] 微缩传统将一次性解锁S与M两种槽位的微缩科技。
+  * [新增] 增加了L槽位的微缩电弧发射器与微缩光矛。
+  * [新增] 微缩传统完成将解锁T槽位的辉煌能量发射器。
+
 ## 仍在修复中的问题
 
 目前在游玩过程中我留意到了一些问题，其中一部分进行了修复，但其中另一部分尚未来得及进行调整。
+
+* 英文本地化翻译 - 15%
+* 首都传统适配迁都、失去首都等事件 - 0%
 
 如果您发现了其他的漏洞/BUG/问题，欢迎在评论区进行反馈，我会尽快修复。
 

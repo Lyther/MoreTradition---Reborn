@@ -1,0 +1,43 @@
+#微缩传统
+tech_mt_l_smallarc = {
+	cost = 20000
+	area = physics
+	tier = 3
+	icon = "tech_mt_smallarc"
+	category = {
+		particles
+	}
+	weight = 0
+	is_rare = yes
+	ai_weight = {
+		factor = 100
+	}
+}
+tech_mt_l_smalllance = {
+	cost = 20000
+	area = physics
+	tier = 3
+	icon = "tech_mt_smalllance"
+	category = {
+		particles
+	}
+	weight = 0
+	is_rare = yes
+	ai_weight = {
+		factor = 100
+	}
+}
+tech_mt_t_smallarc = {
+	cost = 48000
+	area = physics
+	tier = 5
+	icon = "tech_mt_smallarc"
+	category = {
+		particles
+	}
+	weight = 0
+	is_rare = yes
+	ai_weight = {
+		factor = 100
+	}
+}

@@ -1,0 +1,12 @@
+l_simp_chinese:
+#微缩
+ template_mt_largearc:0"小型电弧发射器"
+ template_mt_largelance:0"小型光矛"
+ template_mt_titanic_brilliantarc:0"泰坦级辉煌能量发射器"
+
+ tech_mt_l_smallarc:0"小型电弧发射器"
+ tech_mt_l_smallarc_desc:0"适配大型炮台槽位的电弧发射器，已经很接近真正的电弧发射器了。"
+ tech_mt_l_smalllance:0"小型光矛"
+ tech_mt_l_smalllance_desc:0"果然光矛还是应该安装更大型号的能量发生器，以提供更高的输出功率，而如今，我们找到了完美的平衡点。"
+ tech_mt_t_smallarc:0"泰坦级辉煌能量发射器"
+ tech_mt_t_smallarc_desc:0"真正摧枯拉朽的能量输出效率，能够洞穿宇宙中的一切。"

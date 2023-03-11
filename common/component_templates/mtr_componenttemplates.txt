@@ -1,0 +1,157 @@
+#微型电弧发射器
+#L
+weapon_component_template = {
+	key = "template_mt_largearc"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	icon = "GFX_ship_mt_smallarc"
+	icon_frame = 1
+	projectile_gfx = "projectile_mt_smallarc"
+	tags = { 
+		weapon_type_energy
+	}
+	ai_tags = { 
+		weapon_role_anti_armor
+	}
+	component_set = "set_mt_smallarc"
+
+	prerequisites = {
+		tech_mt_l_smallarc
+	}
+	power = -85
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 176
+			rare_crystals = 4
+		}
+		upkeep = {
+			energy = 1.0
+			alloys = 0.8
+		}
+	}
+
+	damage = {
+		min = 108
+		max = 288
+	}
+	windup = {
+		min = 2
+		max = 20
+	}
+	total_fire_time = 35
+	range = 90
+	accuracy = 1
+	tracking = 0
+	shield_penetration = 0.9
+	armor_penetration = 0.9
+}
+#微型光矛
+#L
+weapon_component_template = {
+	key = "template_mt_largelance"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	icon = "GFX_ship_mt_smalllance"
+	icon_frame = 1
+	projectile_gfx = "projectile_mt_smalllance"
+	tags = { 
+		weapon_type_energy
+	}
+	ai_tags = { 
+		weapon_role_anti_armor
+	}
+	component_set = "set_mt_smalllance"
+
+	prerequisites = {
+		tech_mt_l_smalllance
+	}
+	power = -85
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 176
+			rare_crystals = 4
+		}
+		upkeep = {
+			energy = 1.0
+			alloys = 0.8
+		}
+	}
+
+	damage = {
+		min = 108
+		max = 288
+	}
+	windup = {
+		min = 2
+		max = 20
+	}
+	total_fire_time = 35
+	range = 40
+	accuracy = 0.85
+	tracking = 0
+	shield_damage = 0.5
+	armor_damage = 2
+	hull_damage = 1.5
+}
+#辉煌能量发射器
+#T
+weapon_component_template = {
+	key = "template_mt_titanic_brilliantarc"
+	size = titanic
+	entity = "large_laser_gun_entity"
+	type = instant
+	icon = "GFX_ship_mt_smallarc"
+	icon_frame = 1
+	projectile_gfx = "projectile_mt_smallarc"
+	tags = { 
+		weapon_type_energy
+	}
+	ai_tags = { 
+		weapon_role_anti_armor
+	}
+	component_set = "set_mt_brilliantarc"
+
+	prerequisites = {
+		tech_mt_t_smallarc
+	}
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+	
+	power = -750
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1200
+			rare_crystals = 60
+		}
+		upkeep = {
+			energy = 12
+			alloys = 5
+		}
+	}
+
+	damage = {
+		min = 5000
+		max = 12000
+	}
+	windup = {
+		min = 1
+		max = 19
+	}
+	total_fire_time = 71
+	range = 250
+	accuracy = 1
+	tracking = 0.5
+	hull_damage = 2.0
+	shield_damage = 2.0
+	armor_damage = 2.0
+	shield_penetration = 1.5
+	armor_penetration = 1.5
+}
