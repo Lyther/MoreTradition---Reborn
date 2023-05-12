@@ -68,14 +68,7 @@ leader_trait_mt_evervictorious_1 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 2
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.1
@@ -89,15 +82,7 @@ leader_trait_mt_evervictorious_2 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_1" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 2
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.2
@@ -111,15 +96,7 @@ leader_trait_mt_evervictorious_3 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_2" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 3
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.3
@@ -133,15 +110,7 @@ leader_trait_mt_evervictorious_4 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_3" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 4
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.4
@@ -155,15 +124,7 @@ leader_trait_mt_evervictorious_5 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_4" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 5
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.5
@@ -177,15 +138,7 @@ leader_trait_mt_evervictorious_6 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_5" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 6
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.6
@@ -199,15 +152,7 @@ leader_trait_mt_evervictorious_7 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_6" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 7
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.7
@@ -221,15 +166,7 @@ leader_trait_mt_evervictorious_8 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_7" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 8
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.8
@@ -243,15 +180,7 @@ leader_trait_mt_evervictorious_9 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_8" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 9
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 0.9
@@ -265,15 +194,7 @@ leader_trait_mt_evervictorious_10 = {
 	initial = no
 	randomized = no
 	leader_class = { admiral }
-	replace_traits = { "leader_trait_mt_evervictorious_9" }
-	inline_script = {
-		script = trait/icon
-		CLASS = admiral
-		ICON = GFX_leader_trait_evervictorious
-		RARITY = common
-		COUNCIL = no
-		TIER = 10
-	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
 
 	modifier = {
 		ship_fire_rate_mult = 1
