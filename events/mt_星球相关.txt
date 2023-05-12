@@ -21,7 +21,7 @@ country_event = {
 	id = mt_planet_event.101
 	is_triggered_only = yes
 	trigger = {
-		has_active_tradition = tr_mt_capital_finish
+		has_tradition = tr_mt_capital_finish
 	}
 	hide_window = yes
 	immediate = {

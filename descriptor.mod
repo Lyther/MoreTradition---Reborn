@@ -1,6 +1,6 @@
 name="MoreTradition - Reborn"
 picture="thumbnail.png"
-version="1.2.5"
+version="1.2.6"
 tags={
 	"Buildings"
 	"Military"
