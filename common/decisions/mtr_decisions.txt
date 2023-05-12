@@ -49,10 +49,10 @@ decision_mt_rm_heart = {
 	}
 	effect = {
 		remove_modifier = modifiers_mt_heart
-	}
 		planet_event = {
-			id = mt_planet_event.99
+			id = mt_planet_event.100
 		}
+	}
 	ai_weight = {
 		weight = 100
 	}
