@@ -1,5 +1,5 @@
 on_yearly_pulse_country = {
 	events = {
-		mt_planet_event.100
+		mt_planet_event.101
 	}
 }

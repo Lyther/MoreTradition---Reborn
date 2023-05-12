@@ -50,7 +50,10 @@ country_event = {
 		if = {
 			limit = { has_country_flag = no_active_captical_buff }
 			every_planet_within_border = {
-				limit = { is_colony = yes }
+				limit = {
+					is_colony = yes
+					is_capital = no
+				}
 				if = {
 					limit = {
 						OR = {
@@ -70,6 +73,7 @@ country_event = {
 					remove_modifier = modifiers_mt_capital_5
 				}
 			}
+			remove_country_flag = no_active_captical_buff
 		}
 	}
 }
