@@ -71,20 +71,5 @@ country_event = {
 				}
 			}
 		}
-		every_planet_within_border = {
-			limit = { is_colony = yes }
-			if = {
-				limit = {
-					AND = {
-						has_modifier = modifiers_mt_capital_0
-						has_modifier = modifiers_mt_capital_1
-						has_modifier = modifiers_mt_capital_2
-						has_modifier = modifiers_mt_capital_3
-						has_modifier = modifiers_mt_capital_4
-						has_modifier = modifiers_mt_capital_5
-					}
-				}
-			}
-		}
 	}
 }
