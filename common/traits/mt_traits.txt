@@ -4,7 +4,10 @@ trait_mt_psychic = {
 	initial = no
 	randomized = no
 	species_potential_add = {
-		always = no
+		hidden_trigger = { exists = from }
+		from = {
+			has_tradition = tr_mt_psychic_4
+		}
 	}
 	species_possible_add = {
 		always = yes
@@ -22,7 +25,7 @@ trait_mt_psychic = {
 	potential_crossbreeding_chance = 0.25
 	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
 
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
 
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = 0.05
@@ -38,7 +41,10 @@ trait_mt_prosthesis = {
 	initial = no
 	randomized = no
 	species_potential_add = {
-		always = no
+		hidden_trigger = { exists = from }
+		from = {
+			has_tradition = tr_mt_transform_5
+		}
 	}
 	species_possible_add = {
 		always = yes
@@ -56,7 +62,7 @@ trait_mt_prosthesis = {
 	potential_crossbreeding_chance = 0
 	icon = "gfx/interface/icons/traits/trait_robotic_2.dds"
 
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
 
 	modifier = {
 		planet_jobs_worker_produces_mult = 0.15
