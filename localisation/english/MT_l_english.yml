@@ -1014,6 +1014,7 @@ tradition_mt_heart:0 "Work in unison"
  leader_trait_mt_evervictorious_9_desc:0 "Learn from war in order to be ever-victorious."
  leader_trait_mt_evervictorious_10_desc:0 "Learn from war in order to be ever-victorious."
  modifiers_mt_starwar_5_mf:0 "Pursue the Victory"
+ tradition_mt_starwar_flag:0 "Won a space battle"
 
 #Gaia
  tradition_mt_exgaia:0 "Gaia"

@@ -1,63 +1,62 @@
-# Extra Traditions - Reborn
+# Extra Traditions - Remastered version
 
-The development version of this MOD will be updated in real-time on [GitHub](https://github.com/Lyther/MoreTradition---Reborn). If you want to play the latest development version instead of the stable version, you can get the latest commit through `git pull` from the GitHub repository.
+The development version of this mod will be updated in real-time on [GitHub](https://github.com/Lyther/MoreTradition---Reborn). If you want to play the latest development rather than the stable version, you can get the latest commit using the `git pull` command on the GitHub repository.
 
-Adapted to the latest 3.8 version, if you are still playing version 3.7 and below, you can get the push record of the historical versions in GitHub and manually restore it to that version.
+It is compatible with the latest 3.8 version. If you are still playing version 3.7 or earlier, you can get the push record of historical versions on GitHub and manually restore to that version.
 
-The latest [Extra Traditions](https://steamcommunity.com/sharedfiles/filedetails/?id=2616955720) has been updated to adapt to version 3.6, and thanks to [Stellar Architect](https://steamcommunity.com/profiles/76561198277755) for using some of my code. This is a very exciting thing for players who like Extra Traditions MOD. The new Extra Traditions MOD has improved almost all the exciting content perfectly, and it seems that there is no longer a need for special updates to adapt to the new version. Therefore, this MOD will focus on improving the experience of the Extra Traditions MOD.
+The latest [Extra Traditions mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2616955720) has been updated and adapted to version 3.6, thanks to the adoption of some of my code by player ["Star Haze"](https://steamcommunity.com/profiles/76561198277755). This is an exciting event for a player who loves the Extra Traditions mod. The new Extra Traditions mod has improved almost all the exciting content, and it seems that no further updates are needed to adapt to new versions. Therefore, this mod will focus on improving the Extra Traditions mod experience.
 
-The changes that have been adopted in the Extra Traditions MOD will be removed in this MOD.
+The changes that have been adopted into the Extra Traditions mod will be removed from this mod.
 
-## Adjustments compared to Extra Traditions MOD
+## Adjustments compared to the Extra Traditions mod
 
-**Cultural Heritage Action**
+**Artifact Actions**
 
-- [Adjustment] The duration of Cultural Heritage Traditions: National Appreciation, Cultural Heritage Traditions: High-profile Exhibition, and Cultural Heritage Traditions: Pioneer Experience have been changed to 10 years, and a certain amount of cohesion and influence will be obtained immediately (just like the original game's Cultural Heritage Action decision).
-- [Adjustment] The cost of Cultural Heritage Action has been adjusted to ten times that of the original MOD (adapted to the update of version 3.7).
+- [Adjusted] The duration of Artifact Tradition: National Appreciation, Artifact Tradition: High-profile Exhibition, and Artifact Tradition: Pioneer Experience has been changed to 10 years, and a certain amount of cohesion and influence will be immediately obtained (similar to the original game's Artifact Actions decision).
+- [Adjusted] The cost of Artifact Actions has been adjusted to ten times that of the original mod (for the update of version 3.7).
 
 **Planet Decisions**
 
-- [Adjustment] Concentric Tradition: Concentric Cooperation no longer has a duration limit, but takes effect immediately upon activation and lasts until canceled. Removing Concentric Cooperation will cost 100 influences and cause a loss of 1 influence for each population on the planet.
+- [Adjusted] The Solidarity Tradition: Unity will no longer have a duration limit and will take effect immediately when enabled until it is canceled. Removing Unity will cost 100 influence and each population on the planet will lose 1 influence.
 
 **Population Traits**
 
-- [Adjustment] The Artificial Telepathy/Special Cyborg trait can be added to robot and synthetic populations.
-- [Adjustment] The Artificial Telepathy/Special Cyborg trait can be applied freely in templates.
+- [Adjusted] Artificial Psionic Trait/Special Cybernetic Trait can be added to robot populations and synthetic populations.
+- [Adjusted] Artificial Psionic Trait/Special Cybernetic Trait can be freely applied in templates.
 
 **Traditions**
 
-- Micro-Scaling
-- [Adjustment] Micro-Scaling Tradition will unlock the micro-scaling technology of S and M slots at once.
-- [Newly Added] Micro-scaling arc emitters and micro-scaling spears for the L slot have been added.
-- [Newly Added] Micro-Scaling Tradition will unlock the splendid energy emitter of the T slot after completion.
+- Miniaturization
+  - [Adjusted] Miniaturization Tradition will unlock both S and M slot miniaturization technologies at once.
+  - [Added] Added L slot miniaturized arc emitter and miniaturized javelin.
+  - [Added] Completing the Miniaturization Tradition will unlock the T slot's glorious energy emitter.
 - Special Cultivation
-- [Newly Added] Special Cultivation has added attributes that adapt to the brand-new leader trait of version 3.8.
-- [Newly Added] Special Cultivation can choose two new leader types: legendary leaders and brilliant legendary geniuses.
+  - [Added] Special Cultivation has added attributes that adapt to the brand-new leader traits of version 3.8.
+  - [Added] Special Cultivation has added two new leader types to choose from: Legendary Leaders and Stunning Genius.
+    - **Note: Unbalanced changes. The traits of genius leaders, legendary leaders, and stunning genius leaders are too strong under the situation of version 3.8's leader value collapse. These are meant for reference only. Players who pursue a sense of substitution can choose not to use Special Cultivation.**
+- Traditions that require prerequisites (such as Star Wars, Search for Truth, Gaia, Militarism, and other ideological traditions)
+  - [Adjusted] They will still be displayed in the traditional interface even if the prerequisites are not met but cannot be selected.
+- Capital Tradition
+  - [Added] After the capital is moved or lost, the BUFF of the capital tradition will automatically move to the new capital every January 1st.
 
 **Localization Translation**
 
 - Native support for Chinese.
-- English localization translation has been completed. If you find any problems in the English translation, please provide feedback.
+- English localization translation has been completed. If you find any problems in the English translation, please feel free to provide feedback.
 
-## Issues still being fixed
+## Ongoing issue fixes
 
-During the game, I noticed some issues, some of which have been fixed, but others have not yet been adjusted.
+I have noticed some issues during gameplay, some of which have been fixed, but some have not yet been adjusted. If you find any other bugs/issues, feel free to provide feedback in the comments and I will fix them as soon as possible.
 
-- Capital Tradition adaptation to relocation, loss of capital events - 0%
+## Balance Adjustments
 
-If you find other bugs/issues, please provide feedback in the comments, and I will fix them as soon as possible.
+I believe that balancing adjustments are within the rights of the original author. Unless it is to remove or add features to adapt to new versions, I will not make balancing adjustments. I will only improve functions that can enhance the game experience, such as extending the duration of laws. If you have any suggestions regarding the game experience, please feel free to provide feedback.
 
-## Balance adjustments
+## Compatibility with other mods
 
-I believe that balance adjustments are the right of the original author. Unless it is to adapt to the removed/added features of the new version, I will not adjust the balance. I will only improve features that can improve the gaming experience, such as adjusting the duration of edicts.
+The Extra Traditions mod is excellent. If you want it to collaborate with other mods, or if you want to fix conflicts or adjust the playability of other mod contents, please feel free to provide feedback. For example, for players of the Real Space mod, the range of all weapons has been adjusted to adapt to the new galaxy proportion except for miniaturized arc emitters/javelins/glorious energy emitters.
 
-If you have any suggestions for the gaming experience, please provide feedback.
-
-## Compatibility with other MODs
-
-Extra Traditions MOD is an excellent MOD. If you want it to work with other great MODs or make conflict fixes and playability adjustments for the content of other MODs, please provide feedback. For example, for players of the Real Space MOD, the range of all weapons has been adjusted to the new galaxy scale, but the micro-scaling arc emitter/micro-scaling spear/splendid energy emitter has not been adjusted.
-
-Assuming you need to adapt more Tradition MODs to other excellent MODs, please leave a message, and I will be happy to provide compatibility support.
+If you need to make more traditional mods compatible with other excellent mods, please leave a message and we will provide compatibility support.
 
 # 额外传统 - 重制版
 
@@ -95,6 +94,13 @@ Assuming you need to adapt more Tradition MODs to other excellent MODs, please l
 * 特殊培养
   * [新增] 特殊培养增加了适配3.8版本全新领袖特质的属性。
   * [新增] 特殊培养可以选择两种新的领袖类型：传奇领袖和大放异彩的传奇天才。
+    * **注意：不平衡的改动，天才领袖、传奇领袖、大放异彩的传奇天才在3.8原版领袖数值崩坏的情况下过于强势，仅供参考使用，追求代入感的玩家可以选择不使用特殊培养。**
+* 需要前提条件的传统（星战、追求真理、盖亚、军国等思潮传统）
+  * [调整] 在未达成前提条件时也会显示在传统界面中，但不可采用。
+
+* 首都传统
+  * [新增] 当首都迁移或者丢失首都之后，将会每年一号自动将首都传统的BUFF迁移至新首都。
+
 
 **本地化翻译**
 
@@ -104,8 +110,6 @@ Assuming you need to adapt more Tradition MODs to other excellent MODs, please l
 ## 仍在修复中的问题
 
 目前在游玩过程中我留意到了一些问题，其中一部分进行了修复，但其中另一部分尚未来得及进行调整。
-
-* 首都传统适配迁都、失去首都等事件 - 0%
 
 如果您发现了其他的漏洞/BUG/问题，欢迎在评论区进行反馈，我会尽快修复。
 

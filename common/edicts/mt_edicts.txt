@@ -21,7 +21,7 @@ mt_emergencyfleet = {
 }
 #法令：特殊培养
 mt_leaderdecelop = {
-	length = 0
+	length = 1
 	icon = "GFX_edict_type_policy"
 	potential = {
 		has_tradition = tr_mt_develop_4

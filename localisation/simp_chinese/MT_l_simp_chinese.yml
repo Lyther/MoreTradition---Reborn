@@ -1007,6 +1007,7 @@ tradition_mt_starwar:0 "星战"
  leader_trait_mt_evervictorious_9_desc:0"从战争中学习战争，唯有如此才能常胜不败"
  leader_trait_mt_evervictorious_10_desc:0"从战争中学习战争，唯有如此才能常胜不败"
  modifiers_mt_starwar_5_mf:0"乘胜追击"
+ tradition_mt_starwar_flag:0"赢得一场太空战役"
 
 #盖亚
 tradition_mt_exgaia:0 "盖亚"

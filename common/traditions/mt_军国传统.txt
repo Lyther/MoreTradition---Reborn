@@ -1,4 +1,10 @@
 tr_mt_exmilitarism_adopt = {
+	possible = {
+		OR = {
+			has_ethic = ethic_fanatic_militarist
+			has_ethic = ethic_militarist
+		}
+	}
 	#海军容量+50，指挥上限+20
 	modifier = {
 		country_naval_cap_add = 50
