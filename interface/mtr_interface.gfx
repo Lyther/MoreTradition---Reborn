@@ -1,0 +1,15 @@
+spriteTypes = {
+	#武器
+	spriteType = {
+		name = "GFX_ship_mtr_brilliant_energy_emitter"
+		textureFile = "gfx/interface/component/ship_part_brilliant_energy_emitter.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_mtr_brilliant_energy_emitter"
+		textureFile = "gfx/interface/icons/technologies/tech_brilliant_energy_emitter.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_mtr_titan_brilliant_energy_emitter"
+		textureFile = "gfx/interface/icons/technologies/tech_titan_brilliant_energy_emitter.dds"
+	}
+}
