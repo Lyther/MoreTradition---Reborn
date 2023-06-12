@@ -2,6 +2,6 @@
 component_set = {
 	key = "set_mt_titanic_brilliantarc"
 
-	icon = "GFX_ship_mt_smallarc"
+	icon = "GFX_ship_mtr_brilliant_energy_emitter"
 	icon_frame = 1
 }

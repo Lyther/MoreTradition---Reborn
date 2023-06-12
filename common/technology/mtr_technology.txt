@@ -27,11 +27,25 @@ tech_mt_l_smalllance = {
 		factor = 100
 	}
 }
+tech_mt_x_smallarc = {
+	cost = 24000
+	area = physics
+	tier = 4
+	icon = "tech_brilliant_energy_emitter"
+	category = {
+		particles
+	}
+	weight = 0
+	is_rare = yes
+	ai_weight = {
+		factor = 100
+	}
+}
 tech_mt_t_smallarc = {
 	cost = 48000
 	area = physics
 	tier = 5
-	icon = "tech_mt_smallarc"
+	icon = "tech_titan_brilliant_energy_emitter"
 	category = {
 		particles
 	}

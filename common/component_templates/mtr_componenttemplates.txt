@@ -46,6 +46,7 @@ weapon_component_template = {
 	tracking = 0
 	shield_penetration = 0.9
 	armor_penetration = 0.9
+	size_damage_factor = 0.9
 }
 #微型光矛
 #L
@@ -103,7 +104,7 @@ weapon_component_template = {
 	key = "template_mt_titanic_brilliantarc"
 	size = titanic
 	type = instant
-	icon = "GFX_ship_mt_smallarc"
+	icon = "GFX_ship_mtr_brilliant_energy_emitter"
 	icon_frame = 1
 	projectile_gfx = "projectile_mt_smallarc"
 	tags = { 
@@ -153,4 +154,5 @@ weapon_component_template = {
 	armor_damage = 2.0
 	shield_penetration = 1.5
 	armor_penetration = 1.5
+	size_damage_factor = 1.5
 }
