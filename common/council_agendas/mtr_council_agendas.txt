@@ -1,0 +1,90 @@
+@base_agenda_cost = 7000
+
+agenda_perfect_planet = {
+	agenda_cost = @base_agenda_cost
+	allow = {
+		has_tradition = tr_mt_exgaia_adopt
+	}
+	potential = {
+		always = yes
+	}
+	modifiers = {
+		{
+			planet_decision_enact_speed_mult = 0.25
+			terraform_speed_mult = 0.10
+		}
+	}
+	finish_modifier = agenda_perfect_planet
+}
+
+agenda_promising_leaders = {
+	agenda_cost = @base_agenda_cost
+	allow = {
+		has_tradition = tr_mt_develop_adopt
+	}
+	potential = {
+		check_variable_arithmetic = { which = value:country_num_unlockable_council_slots value > 0 }
+	}
+	modifiers = {
+		{
+			councilor_exp_gain = 0.15
+		}
+	}
+	finish_modifier = agenda_promising_leaders
+	effect = {
+		unlock_council_slots = 1
+	}
+}
+
+agenda_penetration_improvement = {
+	agenda_cost = @base_agenda_cost
+	allow = {
+		has_tradition = tr_mt_smallarms_adopt
+	}
+	potential = {
+		always = yes
+	}
+	modifiers = {
+		{
+			ship_armor_penetration_mult = 0.10
+			ship_shield_penetration_mult = 0.10
+		}
+	}
+	finish_modifier = agenda_penetration_improvement
+}
+
+agenda_total_wars = {
+	agenda_cost = @base_agenda_cost
+	allow = {
+		has_tradition = tr_mt_starwar_adopt
+	}
+	potential = {
+		always = yes
+	}
+	modifiers = {
+		{
+			ship_weapon_damage = 0.25
+			ship_weapon_range_mult = 0.10
+			ship_fire_rate_mult = 0.05
+		}
+	}
+	finish_modifier = agenda_total_wars
+}
+
+agenda_insane_technologies = {
+	agenda_cost = @base_agenda_cost
+	allow = {
+		has_tradition = tr_mt_seektruth_adopt
+	}
+	potential = {
+		always = yes
+	}
+	modifiers = {
+		{
+			planet_researchers_physics_research_produces_add = 1.00
+			planet_researchers_society_research_produces_add = 1.00
+			planet_researchers_engineering_research_produces_add = 1.00
+		}
+	}
+	finish_modifier = agenda_insane_technologies
+}

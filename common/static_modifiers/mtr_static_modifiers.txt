@@ -1,0 +1,25 @@
+agenda_perfect_planet = {
+	planet_decision_enact_speed_mult = 1.00
+	terraform_speed_mult = 0.40
+}
+
+agenda_promising_leaders = {
+	councilor_exp_gain = 0.60
+}
+
+agenda_penetration_improvement = {
+	ship_armor_penetration_mult = 0.40
+	ship_shield_penetration_mult = 0.40
+}
+
+agenda_total_wars = {
+	ship_weapon_damage = 0.50
+	ship_weapon_range_mult = 0.25
+	ship_fire_rate_mult = 0.33
+}
+
+agenda_insane_technologies = {
+	planet_researchers_physics_research_produces_add = 4.00
+	planet_researchers_society_research_produces_add = 4.00
+	planet_researchers_engineering_research_produces_add = 4.00
+}

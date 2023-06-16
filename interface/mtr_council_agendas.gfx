@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_perfect_planet"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_pioneer_politics.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_promising_leaders"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_leadership_conditioning.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_penetration_improvement"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_military_buildup.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_total_wars"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_display_of_power.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_insane_technologies"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_progressive_growth.dds"
+	}
+}
