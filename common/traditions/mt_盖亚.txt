@@ -12,7 +12,7 @@ tr_mt_exgaia_adopt = {
 tr_mt_exgaia_finish = {
 	custom_tooltip_with_modifiers = tr_mt_exgaia_finish_desc
 	modifier = {
-		ascension_perks_add = 1 
+		ascension_perks_add = 1
 	}
 }
 

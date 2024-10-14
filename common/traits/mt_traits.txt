@@ -69,144 +69,424 @@ trait_mt_prosthesis = {
 	}
 }
 #常胜将军Lv.1至Lv.10,每级射速+10%、对船体伤害+5%，船体值+5%，舰船维护费-1%
+#新版
 leader_trait_mt_evervictorious_1 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.1
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.05
 		ship_hull_damage_mult = 0.05
 		ship_hull_mult = 0.05
 		ships_upkeep_mult = -0.01
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_2 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.2
+leader_trait_mt_evervictorious_2= {
+	replace_traits = { leader_trait_mt_evervictorious_1 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.1
 		ship_hull_damage_mult = 0.1
 		ship_hull_mult = 0.1
 		ships_upkeep_mult = -0.02
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_3 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.3
+leader_trait_mt_evervictorious_3= {
+	replace_traits = { leader_trait_mt_evervictorious_2 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.15
 		ship_hull_damage_mult = 0.15
 		ship_hull_mult = 0.15
 		ships_upkeep_mult = -0.03
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_4 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.4
+leader_trait_mt_evervictorious_4= {
+	replace_traits = { leader_trait_mt_evervictorious_3 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 4
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.2
 		ship_hull_damage_mult = 0.2
 		ship_hull_mult = 0.2
 		ships_upkeep_mult = -0.04
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_5 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.5
+leader_trait_mt_evervictorious_5= {
+	replace_traits = { leader_trait_mt_evervictorious_4 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 5
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.25
 		ship_hull_damage_mult = 0.25
 		ship_hull_mult = 0.25
 		ships_upkeep_mult = -0.05
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_6 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.6
+leader_trait_mt_evervictorious_6= {
+	replace_traits = { leader_trait_mt_evervictorious_5 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 6
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.3
 		ship_hull_damage_mult = 0.3
 		ship_hull_mult = 0.3
 		ships_upkeep_mult = -0.06
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_7 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.7
+leader_trait_mt_evervictorious_7= {
+	replace_traits = { leader_trait_mt_evervictorious_6 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 7
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.35
 		ship_hull_damage_mult = 0.35
 		ship_hull_mult = 0.35
 		ships_upkeep_mult = -0.07
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_8 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.8
+leader_trait_mt_evervictorious_8= {
+	replace_traits = { leader_trait_mt_evervictorious_7 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 8
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.4
 		ship_hull_damage_mult = 0.4
 		ship_hull_mult = 0.4
 		ships_upkeep_mult = -0.08
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_9 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 0.9
+leader_trait_mt_evervictorious_9= {
+	replace_traits = { leader_trait_mt_evervictorious_8 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 9
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.45
 		ship_hull_damage_mult = 0.45
 		ship_hull_mult = 0.45
 		ships_upkeep_mult = -0.09
 	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
 }
-leader_trait_mt_evervictorious_10 = {
-	cost = 0
-	initial = no
-	randomized = no
-	leader_class = { admiral }
-	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
-
-	modifier = {
-		ship_fire_rate_mult = 1
+leader_trait_mt_evervictorious_10= {
+	replace_traits = { leader_trait_mt_evervictorious_9 }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_scholar_of_war
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 10
+	}
+	fleet_modifier = {
+		ship_fire_rate_mult = 0.5
 		ship_hull_damage_mult = 0.5
 		ship_weapon_damage = 0.5
 		ship_hull_mult = 0.5
 		ships_upkeep_mult = -0.1
+	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
+}
+#旧版
+# leader_trait_mt_evervictorious_1 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.1
+# 		ship_hull_damage_mult = 0.05
+# 		ship_hull_mult = 0.05
+# 		ships_upkeep_mult = -0.01
+# 	}
+# }
+# leader_trait_mt_evervictorious_2 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.2
+# 		ship_hull_damage_mult = 0.1
+# 		ship_hull_mult = 0.1
+# 		ships_upkeep_mult = -0.02
+# 	}
+# }
+# leader_trait_mt_evervictorious_3 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.3
+# 		ship_hull_damage_mult = 0.15
+# 		ship_hull_mult = 0.15
+# 		ships_upkeep_mult = -0.03
+# 	}
+# }
+# leader_trait_mt_evervictorious_4 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.4
+# 		ship_hull_damage_mult = 0.2
+# 		ship_hull_mult = 0.2
+# 		ships_upkeep_mult = -0.04
+# 	}
+# }
+# leader_trait_mt_evervictorious_5 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.5
+# 		ship_hull_damage_mult = 0.25
+# 		ship_hull_mult = 0.25
+# 		ships_upkeep_mult = -0.05
+# 	}
+# }
+# leader_trait_mt_evervictorious_6 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.6
+# 		ship_hull_damage_mult = 0.3
+# 		ship_hull_mult = 0.3
+# 		ships_upkeep_mult = -0.06
+# 	}
+# }
+# leader_trait_mt_evervictorious_7 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.7
+# 		ship_hull_damage_mult = 0.35
+# 		ship_hull_mult = 0.35
+# 		ships_upkeep_mult = -0.07
+# 	}
+# }
+# leader_trait_mt_evervictorious_8 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.8
+# 		ship_hull_damage_mult = 0.4
+# 		ship_hull_mult = 0.4
+# 		ships_upkeep_mult = -0.08
+# 	}
+# }
+# leader_trait_mt_evervictorious_9 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 0.9
+# 		ship_hull_damage_mult = 0.45
+# 		ship_hull_mult = 0.45
+# 		ships_upkeep_mult = -0.09
+# 	}
+# }
+# leader_trait_mt_evervictorious_10 = {
+# 	cost = 0
+# 	initial = no
+# 	randomized = no
+# 	leader_trait = { admiral }
+# 	leader_class = { admiral }
+# 	icon = "gfx/interface/icons/traits/trait_cyborg_loyalty_circuits.dds"
+
+# 	modifier = {
+# 		ship_fire_rate_mult = 1
+# 		ship_hull_damage_mult = 0.5
+# 		ship_weapon_damage = 0.5
+# 		ship_hull_mult = 0.5
+# 		ships_upkeep_mult = -0.1
+# 	}
+# }
+
+#培养传统
+#满级特质
+leader_trait_mt_develop_scientist = {
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = GFX_trait_mt_develop_1
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		all_technology_research_speed = 0.25
+		planet_researchers_produces_mult = 0.25
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		weight = 0
+	}
+}
+leader_trait_mt_develop_commander = {
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_trait_mt_develop_1
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		country_power_projection_influence_produces_add = 1
+		shipclass_military_build_speed_mult = 0.5
+	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = 0
+	}
+}
+leader_trait_mt_develop_official = {
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = GFX_trait_mt_develop_1
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		planet_jobs_produces_mult = 0.1
+		council_agenda_progress_speed = 0.5
+		council_agenda_finishing_effect_duration_mult = 0.25
+	}
+	leader_class = { official }
+	selectable_weight = {
+		weight = 0
 	}
 }

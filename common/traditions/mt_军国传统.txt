@@ -1,14 +1,9 @@
 tr_mt_exmilitarism_adopt = {
-	possible = {
-		OR = {
-			has_ethic = ethic_fanatic_militarist
-			has_ethic = ethic_militarist
-		}
-	}
 	#海军容量+50，指挥上限+20
 	modifier = {
 		country_naval_cap_add = 50
 		command_limit_add = 20
+		pop_ethic_militarist_attraction_mult = 0.5
 	}
 }
 
@@ -18,7 +13,7 @@ tr_mt_exmilitarism_finish = {
 		country_naval_cap_mult = 0.2
 		command_limit_add = 20
 		pop_ethic_militarist_attraction_mult = 0.5
-		ascension_perks_add = 1 
+		ascension_perks_add = 1
 	}
 }
 

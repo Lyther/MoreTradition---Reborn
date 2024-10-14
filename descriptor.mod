@@ -1,6 +1,6 @@
 name="MoreTradition - Reborn"
 picture="thumbnail.png"
-version="1.3.5"
+version="1.4.0"
 tags={
 	"Buildings"
 	"Military"
@@ -11,5 +11,5 @@ tags={
 	"Gameplay"
 	"Leaders"
 }
-supported_version="3.8.*"
+supported_version="v3.13.*"
 remote_file_id="2911781496"

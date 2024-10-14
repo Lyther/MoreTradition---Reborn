@@ -1,7 +1,38 @@
-@base_agenda_cost = 7000
+@mt_base_tradition_agenda_cost = 7000
+@mt_short_agenda_cost = 3500
+
+#生产改革
+agenda_mt_produce = {
+	agenda_cost = @mt_base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_mt_produce_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+	}
+	finish_modifier = agenda_mt_produce_finish
+}
+
+#聚焦科研
+agenda_mt_research = {
+	agenda_cost = @mt_base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_mt_research_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifier = {
+		planet_researchers_produces_mult = 0.15
+	}
+	finish_modifier = agenda_mt_research_finish
+}
 
 agenda_perfect_planet = {
-	agenda_cost = @base_agenda_cost
+	agenda_cost = @mt_base_tradition_agenda_cost
 	allow = {
 		has_tradition = tr_mt_exgaia_adopt
 	}
@@ -18,7 +49,7 @@ agenda_perfect_planet = {
 }
 
 agenda_promising_leaders = {
-	agenda_cost = @base_agenda_cost
+	agenda_cost = @mt_base_tradition_agenda_cost
 	allow = {
 		has_tradition = tr_mt_develop_adopt
 	}
@@ -37,7 +68,7 @@ agenda_promising_leaders = {
 }
 
 agenda_penetration_improvement = {
-	agenda_cost = @base_agenda_cost
+	agenda_cost = @mt_base_tradition_agenda_cost
 	allow = {
 		has_tradition = tr_mt_smallarms_adopt
 	}
@@ -54,7 +85,7 @@ agenda_penetration_improvement = {
 }
 
 agenda_total_wars = {
-	agenda_cost = @base_agenda_cost
+	agenda_cost = @mt_base_tradition_agenda_cost
 	allow = {
 		has_tradition = tr_mt_starwar_adopt
 	}
@@ -72,7 +103,7 @@ agenda_total_wars = {
 }
 
 agenda_insane_technologies = {
-	agenda_cost = @base_agenda_cost
+	agenda_cost = @mt_base_tradition_agenda_cost
 	allow = {
 		has_tradition = tr_mt_seektruth_adopt
 	}

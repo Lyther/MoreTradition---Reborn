@@ -8,18 +8,17 @@ weapon_component_template = {
 	icon = "GFX_ship_mt_smallarc"
 	icon_frame = 1
 	projectile_gfx = "projectile_mt_smallarc"
-	tags = { 
-		weapon_type_energy
-	}
-	ai_tags = { 
-		weapon_role_anti_armor
-	}
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 0
 	component_set = "set_mt_smallarc"
+	prerequisites = { tech_mt_s_smallarc }
 
-	prerequisites = {
-		tech_mt_s_smallarc
+	target_weights = {
+		titan = 3
+		battleship = 2
 	}
-	power = -27
+
 	resources = {
 		category = ship_components
 		cost = {
@@ -32,21 +31,26 @@ weapon_component_template = {
 		}
 	}
 
+	power = -29
 	damage = {
-		min = 17
-		max = 46
+		min = 1
+		max = 130
 	}
 	windup = {
-		min = 2
-		max = 20
+		min = 3
+		max = 12
 	}
-	total_fire_time = 35
+	total_fire_time = 18
 	range = 40
-	accuracy = 1
-	tracking = 0
-	shield_penetration = 0.9
-	armor_penetration = 0.9
-	size_damage_factor = 0.9
+	accuracy = 1.00
+	tracking = 0.85
+	shield_penetration = 1.20
+	armor_penetration = 1.20
+	size_damage_factor = 1.0
+
+	ai_weight = {
+		weight = 0
+	}
 }
 #M
 weapon_component_template = {
@@ -57,18 +61,16 @@ weapon_component_template = {
 	icon = "GFX_ship_mt_smallarc"
 	icon_frame = 1
 	projectile_gfx = "projectile_mt_smallarc"
-	tags = { 
-		weapon_type_energy
-	}
-	ai_tags = { 
-		weapon_role_anti_armor
-	}
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
 	component_set = "set_mt_smallarc"
+	prerequisites = { tech_mt_m_smallarc }
 
-	prerequisites = {
-		tech_mt_m_smallarc
+	target_weights = {
+		titan = 3
+		battleship = 2
 	}
-	power = -40
+
 	resources = {
 		category = ship_components
 		cost = {
@@ -81,21 +83,26 @@ weapon_component_template = {
 		}
 	}
 
+	power = -59
 	damage = {
-		min = 43
-		max = 115
+		min = 2
+		max = 260
 	}
 	windup = {
-		min = 2
-		max = 20
+		min = 4
+		max = 16
 	}
-	total_fire_time = 35
+	total_fire_time = 24
 	range = 60
-	accuracy = 1
-	tracking = 0
-	shield_penetration = 0.9
-	armor_penetration = 0.9
-	size_damage_factor = 0.9
+	accuracy = 1.00
+	tracking = 0.65
+	shield_penetration = 1.35
+	armor_penetration = 1.35
+	size_damage_factor = 1.00
+
+	ai_weight = {
+		weight = 0
+	}
 }
 #微型光矛
 #S
@@ -107,18 +114,12 @@ weapon_component_template = {
 	icon = "GFX_ship_mt_smalllance"
 	icon_frame = 1
 	projectile_gfx = "projectile_mt_smalllance"
-	tags = { 
-		weapon_type_energy
-	}
-	ai_tags = { 
-		weapon_role_anti_armor
-	}
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 0
 	component_set = "set_mt_smalllance"
+	prerequisites = { tech_mt_s_smalllance }
 
-	prerequisites = {
-		tech_mt_s_smalllance
-	}
-	power = -27
 	resources = {
 		category = ship_components
 		cost = {
@@ -131,21 +132,26 @@ weapon_component_template = {
 		}
 	}
 
+	power = -29
 	damage = {
-		min = 17
-		max = 46
+		min = 78
+		max = 195
 	}
 	windup = {
-		min = 2
-		max = 20
+		min = 3
+		max = 12
 	}
-	total_fire_time = 35
+	total_fire_time = 18
 	range = 40
 	accuracy = 0.85
-	tracking = 0
-	shield_damage = 0.5
-	armor_damage = 2
-	hull_damage = 1.5
+	tracking = 0.85
+	hull_damage = 1.50
+	shield_damage = 0.50
+	armor_damage = 2.00
+
+	ai_weight = {
+		weight = 0
+	}
 }
 #M
 weapon_component_template = {
@@ -156,18 +162,12 @@ weapon_component_template = {
 	icon = "GFX_ship_mt_smalllance"
 	icon_frame = 1
 	projectile_gfx = "projectile_mt_smalllance"
-	tags = { 
-		weapon_type_energy
-	}
-	ai_tags = { 
-		weapon_role_anti_armor
-	}
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 0
 	component_set = "set_mt_smalllance"
+	prerequisites = { tech_mt_m_smalllance }
 
-	prerequisites = {
-		tech_mt_m_smalllance
-	}
-	power = -40
 	resources = {
 		category = ship_components
 		cost = {
@@ -180,21 +180,26 @@ weapon_component_template = {
 		}
 	}
 
+	power = -59
 	damage = {
-		min = 43
-		max = 115
+		min = 260
+		max = 650
 	}
 	windup = {
-		min = 2
-		max = 20
+		min = 4
+		max = 16
 	}
-	total_fire_time = 35
+	total_fire_time = 24
 	range = 60
 	accuracy = 0.85
-	tracking = 0
-	shield_damage = 0.5
-	armor_damage = 2
-	hull_damage = 1.5
+	tracking = 0.65
+	hull_damage = 1.50
+	shield_damage = 0.50
+	armor_damage = 2.00
+
+	ai_weight = {
+		weight = 0
+	}
 }
 #辉煌能量发射器
 #X
@@ -206,24 +211,17 @@ weapon_component_template = {
 	icon = "GFX_ship_mtr_brilliant_energy_emitter"
 	icon_frame = 1
 	projectile_gfx = "projectile_mt_smallarc"
-	tags = { 
-		weapon_type_energy
-	}
-	ai_tags = { 
-		weapon_role_anti_armor
-	}
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 0
 	component_set = "set_mt_brilliantarc"
-
-	prerequisites = {
-		tech_mt_x_smallarc
-	}
+	prerequisites = { tech_mt_x_smallarc }
 
 	target_weights = {
 		titan = 3
 		battleship = 2
 	}
-	
-	power = -300
+
 	resources = {
 		category = ship_components
 		cost = {
@@ -236,22 +234,27 @@ weapon_component_template = {
 		}
 	}
 
+	power = -390
 	damage = {
-		min = 2000
-		max = 3000
+		min = 3
+		max = 5070
 	}
 	windup = {
-		min = 1
-		max = 19
+		min = 8
+		max = 36
 	}
-	total_fire_time = 71
+	total_fire_time = 45
 	range = 180
-	accuracy = 1
-	tracking = 0
-	hull_damage = 1.2
-	shield_damage = 1.2
-	armor_damage = 1.2
-	shield_penetration = 0.9
-	armor_penetration = 0.9
-	size_damage_factor = 0.9
+	accuracy = 1.00
+	tracking = 0.50
+	hull_damage = 1.50
+	shield_damage = 1.50
+	armor_damage = 1.50
+	shield_penetration = 1.75
+	armor_penetration = 1.75
+	size_damage_factor = 1.00
+
+	ai_weight = {
+		weight = 0
+	}
 }

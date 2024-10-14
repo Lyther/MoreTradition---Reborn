@@ -1,0 +1,200 @@
+namespace = mt_situations_event
+#生产改革各事件
+#启动局势：生产改革
+country_event = {
+	id = mt_situations_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		start_situation = {
+			type = situation_mt_produce
+			target = root
+		}
+	}
+}
+
+#生产改革第一阶段事件
+situation_event = {
+	id = mt_situations_event.2
+	title = "mt_situations_event.2.name"
+	desc = "mt_situations_event.2.desc"
+	picture = GFX_evt_busy_spaceport
+	situation = this
+	is_triggered_only = yes
+	immediate = {
+		set_situation_flag = situation_mt_produce_pause
+	}
+	option = {
+		#一产加成
+		name = "mt_situations_event.2.a"
+		owner = {
+			add_modifier = {
+				modifier = modifiers_mt_tr_produce_2_a
+			}
+		}
+	}
+	option = {
+		#开采站加成
+		name = "mt_situations_event.2.b"
+		owner = {
+			add_modifier = {
+				modifier = modifiers_mt_tr_produce_2_b
+			}
+		}
+	}
+	option = {
+		#巨构科技
+		name = "mt_situations_event.2.c"
+		owner = {
+			if = {
+				limit = {
+					NOR = {
+						has_technology = tech_mega_engineering
+						has_tech_option = tech_mega_engineering
+					}
+				}
+				add_research_option = tech_mega_engineering
+				add_tech_progress = {
+					tech = tech_mega_engineering
+					progress = 0.5
+				}
+			}
+			else = {
+				add_monthly_resource_mult = {
+					resource = engineering_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+	}
+	after = {
+		remove_situation_flag = situation_mt_produce_pause
+	}
+}
+
+#生产改革第二阶段事件
+situation_event = {
+	id = mt_situations_event.3
+	title = "mt_situations_event.3.name"
+	desc = "mt_situations_event.3.desc"
+	picture = GFX_evt_busy_spaceport
+	situation = this
+	is_triggered_only = yes
+	immediate = {
+		set_situation_flag = situation_mt_produce_pause
+	}
+	option = {
+		#劳工加成
+		name = "mt_situations_event.3.a"
+		owner = {
+			add_modifier = {
+				modifier = modifiers_mt_tr_produce_3_a
+			}
+		}
+	}
+	option = {
+		#专家加成
+		name = "mt_situations_event.3.b"
+		owner = {
+			add_modifier = {
+				modifier = modifiers_mt_tr_produce_3_b
+			}
+		}
+	}
+	option = {
+		#统治者加成
+		name = "mt_situations_event.3.c"
+		owner = {
+			add_modifier = {
+				modifier = modifiers_mt_tr_produce_3_c
+			}
+		}
+	}
+	after = {
+		remove_situation_flag = situation_mt_produce_pause
+	}
+}
+
+#生产改革第三阶段事件
+situation_event = {
+	id = mt_situations_event.4
+	title = "mt_situations_event.4.name"
+	desc = "mt_situations_event.4.desc"
+	picture = GFX_evt_busy_spaceport
+	situation = this
+	is_triggered_only = yes
+	immediate = {
+		set_situation_flag = situation_mt_produce_pause
+	}
+	option = {
+		#开采站产出提高，减少能源币
+		name = "mt_situations_event.4.a"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 10000
+				}
+			}
+		}
+		owner = {
+			add_modifier = {
+				modifier = modifiers_mt_tr_produce_4_a
+			}
+			add_resource = {
+				energy = -10000
+			}
+		}
+	}
+	option = {
+		#劳工人口产出提高，减少影响力
+		name = "mt_situations_event.4.b"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 250
+				}
+			}
+		}
+		owner = {
+			add_modifier = {
+				modifier = modifiers_mt_tr_produce_4_b
+			}
+			add_resource = {
+				influence = -250
+			}
+		}
+	}
+	option = {
+		#无事发生
+		name = "mt_situations_event.4.c"
+	}
+	after = {
+		remove_situation_flag = situation_mt_produce_pause
+	}
+}
+
+#生产改革完成
+situation_event = {
+	id = mt_situations_event.5
+	title = "mt_situations_event.5.name"
+	desc = "mt_situations_event.5.desc"
+	picture = GFX_evt_busy_spaceport
+	situation = this
+	is_triggered_only = yes
+	option = {
+		name = "mt_situations_event.5.a"
+		custom_tooltip = "mt_situations_event.5.a.tt"
+	}
+	after = {
+		destroy_situation = this
+		owner = {
+			hidden_effect = {
+				set_country_flag = tr_mt_produce_unlocked
+			}
+		}
+	}
+}

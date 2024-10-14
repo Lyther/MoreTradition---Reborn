@@ -1,13 +1,8 @@
 tr_mt_exxenophile_adopt = {
-	possible = {
-		OR = {
-			has_ethic = ethic_fanatic_xenophile
-			has_ethic = ethic_xenophile
-		}
-	}
 	#特使+1
 	modifier = {
 		envoys_add = 1
+		pop_ethic_xenophile_attraction_mult = 0.5
 	}
 }
 
@@ -16,7 +11,7 @@ tr_mt_exxenophile_finish = {
 	modifier = {
 		trade_value_mult = 0.5
 		pop_ethic_xenophile_attraction_mult = 0.5
-		ascension_perks_add = 1 
+		ascension_perks_add = 1
 	}
 }
 

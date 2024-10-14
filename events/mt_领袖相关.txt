@@ -292,7 +292,7 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = governor
+				class = official
 				species = owner_main_species
 				name = random
 				skill = 3
@@ -320,21 +320,7 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = admiral
-				species = owner_main_species
-				name = random
-				skill = 3
-			}
-		}
-	}
-	#陆军司令
-	option = {
-		name = mt_leader_event.2.d
-		#创建具体的领袖
-		while = {
-			count = leader_amount
-			create_leader = {
-				class = general
+				class = commander
 				species = owner_main_species
 				name = random
 				skill = 3
@@ -360,7 +346,7 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = governor
+				class = official
 				species = owner_main_species
 				name = random
 				skill = 5
@@ -388,21 +374,7 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = admiral
-				species = owner_main_species
-				name = random
-				skill = 5
-			}
-		}
-	}
-	#陆军司令
-	option = {
-		name = mt_leader_event.2.d
-		#创建具体的领袖
-		while = {
-			count = leader_amount
-			create_leader = {
-				class = general
+				class = commander
 				species = owner_main_species
 				name = random
 				skill = 5
@@ -428,7 +400,7 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = governor
+				class = official
 				species = owner_main_species
 				name = random
 				skill = 10
@@ -456,21 +428,7 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = admiral
-				species = owner_main_species
-				name = random
-				skill = 10
-			}
-		}
-	}
-	#陆军司令
-	option = {
-		name = mt_leader_event.2.d
-		#创建具体的领袖
-		while = {
-			count = leader_amount
-			create_leader = {
-				class = general
+				class = commander
 				species = owner_main_species
 				name = random
 				skill = 10
@@ -496,15 +454,13 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = governor
+				class = official
 				species = owner_main_species
 				name = random
 				skill = 1
 				traits = {
-					trait = leader_trait_geologist
-					trait = leader_trait_shroud_preacher
-					trait = leader_trait_promising_genius_councilor_governor
-					trait = leader_trait_promising_genius_governor
+					trait = leader_trait_promising_genius_councilor_official
+					trait = leader_trait_promising_genius_official
 				}
 				effect = {
 					set_leader_flag = immune_to_negative_traits
@@ -526,18 +482,6 @@ country_event = {
 				traits = {
 					trait = leader_trait_promising_genius_councilor_scientist
 					trait = leader_trait_promising_genius_scientist
-					trait = subclass_scientist_explorer
-					trait = leader_trait_prospector
-					trait = leader_trait_observant
-					trait = leader_trait_collective_wisdom
-					trait = leader_trait_insightful
-					trait = leader_trait_salvager
-					trait = leader_trait_midas_touch
-					trait = leader_trait_knowledge_for_the_masses
-					trait = leader_trait_repair_crew
-					trait = leader_trait_xeno_cataloger
-					trait = leader_trait_frontier_adventurer
-					trait = leader_trait_fotd_scientist
 				}
 				effect = {
 					set_leader_flag = immune_to_negative_traits
@@ -552,52 +496,13 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = admiral
+				class = commander
 				species = owner_main_species
 				name = random
 				skill = 1
 				traits = {
-					trait = leader_trait_promising_genius_councilor_admiral
-					trait = leader_trait_promising_genius_admiral
-					trait = leader_trait_corsair
-					trait = leader_trait_par_zealot
-					trait = leader_trait_shipbreaker
-					trait = leader_trait_juryrigger
-					trait = leader_trait_scholar_of_war
-					trait = leader_trait_reverse_engineer
-					trait = leader_trait_restore_point
-					trait = leader_trait_admiral_hells_heart
-				}
-				effect = {
-					set_leader_flag = immune_to_negative_traits
-				}
-			}
-		}
-	}
-	#陆军司令
-	option = {
-		name = mt_leader_event.2.d
-		#创建具体的领袖
-		while = {
-			count = leader_amount
-			create_leader = {
-				class = general
-				species = owner_main_species
-				name = random
-				skill = 1
-				traits = {
-					trait = leader_trait_promising_genius_councilor_general
-					trait = leader_trait_promising_genius_general
-					trait = leader_trait_kidnapper
-					trait = leader_trait_interrogator
-					trait = leader_trait_industrial_espionage
-					trait = leader_trait_crusader
-					trait = leader_trait_chainbreaker
-					trait = leader_trait_honored_warmaster
-					trait = leader_trait_academia_recruiter
-					trait = leader_trait_pilferer
-					trait = leader_trait_supreme_warrior
-					trait = leader_trait_bellicose
+					trait = leader_trait_promising_genius_councilor_commander
+					trait = leader_trait_promising_genius_commander
 				}
 				effect = {
 					set_leader_flag = immune_to_negative_traits
@@ -624,27 +529,13 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = governor
+				class = official
 				species = owner_main_species
 				name = random
 				skill = 8
 				traits = {
-					trait = leader_trait_adventurous_spirit
-					trait = leader_trait_eager
-					trait = leader_trait_erudite
-					trait = leader_trait_cyborg
-					trait = leader_trait_synthetic
-					trait = leader_trait_psionic
-					trait = leader_trait_chosen
-					trait = leader_trait_composer_chosen
-					trait = leader_trait_instrument_chosen
-					trait = leader_trait_eater_chosen
-					trait = leader_trait_whisperers_chosen
-					trait = leader_trait_brainslug
-					trait = leader_trait_legendary_scientific_diplomacy
-					trait = leader_trait_legendary_great_inventor
-					trait = leader_trait_legendary_leader_councilor_governor
-					trait = leader_trait_legendary_leader_governor
+					trait = leader_trait_legendary_leader_councilor_official
+					trait = leader_trait_legendary_leader_official
 				}
 				effect = {
 					set_leader_flag = legendary_leader
@@ -665,20 +556,6 @@ country_event = {
 				name = random
 				skill = 8
 				traits = {
-					trait = leader_trait_adventurous_spirit
-					trait = leader_trait_eager
-					trait = leader_trait_erudite
-					trait = leader_trait_cyborg
-					trait = leader_trait_synthetic
-					trait = leader_trait_psionic
-					trait = leader_trait_chosen
-					trait = leader_trait_composer_chosen
-					trait = leader_trait_instrument_chosen
-					trait = leader_trait_eater_chosen
-					trait = leader_trait_whisperers_chosen
-					trait = leader_trait_brainslug
-					trait = leader_trait_legendary_scientific_diplomacy
-					trait = leader_trait_legendary_great_inventor
 					trait = leader_trait_legendary_leader_councilor_scientist
 					trait = leader_trait_legendary_leader_scientist
 				}
@@ -696,75 +573,13 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = admiral
+				class = commander
 				species = owner_main_species
 				name = random
 				skill = 8
 				traits = {
-					trait = leader_trait_adventurous_spirit
-					trait = leader_trait_eager
-					trait = leader_trait_educator
-					trait = leader_trait_master_bureaucrat
-					trait = leader_trait_selfcare_expert
-					trait = leader_trait_intemporal
-					trait = leader_trait_shroud_age
-					trait = leader_trait_dragonbane
-					trait = leader_trait_erudite
-					trait = leader_trait_cyborg
-					trait = leader_trait_synthetic
-					trait = leader_trait_psionic
-					trait = leader_trait_chosen
-					trait = leader_trait_composer_chosen
-					trait = leader_trait_instrument_chosen
-					trait = leader_trait_eater_chosen
-					trait = leader_trait_whisperers_chosen
-					trait = leader_trait_brainslug
 					trait = leader_trait_legendary_scientific_diplomacy
 					trait = leader_trait_legendary_great_inventor
-					trait = leader_trait_legendary_leader_councilor_admiral
-					trait = leader_trait_legendary_leader_admiral
-				}
-				effect = {
-					set_leader_flag = legendary_leader
-					set_leader_flag = immune_to_negative_traits
-				}
-			}
-		}
-	}
-	#陆军司令
-	option = {
-		name = mt_leader_event.2.d
-		#创建具体的领袖
-		while = {
-			count = leader_amount
-			create_leader = {
-				class = general
-				species = owner_main_species
-				name = random
-				skill = 8
-				traits = {
-					trait = leader_trait_adventurous_spirit
-					trait = leader_trait_eager
-					trait = leader_trait_educator
-					trait = leader_trait_master_bureaucrat
-					trait = leader_trait_selfcare_expert
-					trait = leader_trait_intemporal
-					trait = leader_trait_shroud_age
-					trait = leader_trait_dragonbane
-					trait = leader_trait_erudite
-					trait = leader_trait_cyborg
-					trait = leader_trait_synthetic
-					trait = leader_trait_psionic
-					trait = leader_trait_chosen
-					trait = leader_trait_composer_chosen
-					trait = leader_trait_instrument_chosen
-					trait = leader_trait_eater_chosen
-					trait = leader_trait_whisperers_chosen
-					trait = leader_trait_brainslug
-					trait = leader_trait_legendary_scientific_diplomacy
-					trait = leader_trait_legendary_great_inventor
-					trait = leader_trait_legendary_leader_councilor_general
-					trait = leader_trait_legendary_leader_general
 				}
 				effect = {
 					set_leader_flag = legendary_leader
@@ -792,31 +607,13 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = governor
+				class = official
 				species = owner_main_species
 				name = random
 				skill = 10
 				traits = {
-					trait = leader_trait_adventurous_spirit_3
-					trait = leader_trait_eager_2
-					trait = leader_trait_erudite
-					trait = leader_trait_cyborg
-					trait = leader_trait_synthetic
-					trait = leader_trait_psionic
-					trait = leader_trait_chosen
-					trait = leader_trait_composer_chosen
-					trait = leader_trait_instrument_chosen
-					trait = leader_trait_eater_chosen
-					trait = leader_trait_whisperers_chosen
-					trait = leader_trait_brainslug
-					trait = leader_trait_legendary_scientific_diplomacy_3
-					trait = leader_trait_legendary_great_inventor_3
-					trait = leader_trait_geologist_3
-					trait = leader_trait_mediator
-					trait = leader_trait_shroud_preacher
-					trait = leader_trait_galvanizer
-					trait = leader_trait_legendary_genius_councilor_governor
-					trait = leader_trait_legendary_genius_governor
+					trait = leader_trait_legendary_genius_councilor_official
+					trait = leader_trait_legendary_genius_official
 				}
 				effect = {
 					set_leader_flag = legendary_leader
@@ -837,34 +634,6 @@ country_event = {
 				name = random
 				skill = 10
 				traits = {
-					trait = leader_trait_adventurous_spirit_3
-					trait = leader_trait_eager_2
-					trait = leader_trait_erudite
-					trait = leader_trait_cyborg
-					trait = leader_trait_synthetic
-					trait = leader_trait_psionic
-					trait = leader_trait_chosen
-					trait = leader_trait_composer_chosen
-					trait = leader_trait_instrument_chosen
-					trait = leader_trait_eater_chosen
-					trait = leader_trait_whisperers_chosen
-					trait = leader_trait_brainslug
-					trait = leader_trait_legendary_scientific_diplomacy_3
-					trait = leader_trait_legendary_great_inventor_3
-					trait = subclass_scientist_explorer
-					trait = leader_trait_archaeologist_2
-					trait = leader_trait_prospector_3
-					trait = leader_trait_observant_3
-					trait = leader_trait_collective_wisdom_3
-					trait = leader_trait_insightful_3
-					trait = leader_trait_salvager_3
-					trait = leader_trait_surveyor
-					trait = leader_trait_midas_touch
-					trait = leader_trait_knowledge_for_the_masses
-					trait = leader_trait_repair_crew
-					trait = leader_trait_xeno_cataloger
-					trait = leader_trait_frontier_adventurer
-					trait = leader_trait_fotd_scientist
 					trait = leader_trait_legendary_genius_councilor_scientist
 					trait = leader_trait_legendary_genius_scientist
 				}
@@ -882,35 +651,13 @@ country_event = {
 		while = {
 			count = leader_amount
 			create_leader = {
-				class = admiral
+				class = commander
 				species = owner_main_species
 				name = random
 				skill = 10
 				traits = {
-					trait = leader_trait_adventurous_spirit_3
-					trait = leader_trait_eager_2
-					trait = leader_trait_erudite
-					trait = leader_trait_cyborg
-					trait = leader_trait_synthetic
-					trait = leader_trait_psionic
-					trait = leader_trait_chosen
-					trait = leader_trait_composer_chosen
-					trait = leader_trait_instrument_chosen
-					trait = leader_trait_eater_chosen
-					trait = leader_trait_whisperers_chosen
-					trait = leader_trait_brainslug
-					trait = leader_trait_legendary_scientific_diplomacy_3
-					trait = leader_trait_legendary_great_inventor_3
-					trait = leader_trait_corsair_3
-					trait = leader_trait_par_zealot_3
-					trait = leader_trait_shipbreaker_3
-					trait = leader_trait_juryrigger_3
-					trait = leader_trait_scholar_of_war_3
-					trait = leader_trait_reverse_engineer
-					trait = leader_trait_restore_point
-					trait = leader_trait_admiral_hells_heart
-					trait = leader_trait_legendary_genius_councilor_admiral
-					trait = leader_trait_legendary_genius_admiral
+					trait = leader_trait_legendary_genius_councilor_commander
+					trait = leader_trait_legendary_genius_commander
 				}
 				effect = {
 					set_leader_flag = legendary_leader
@@ -919,50 +666,46 @@ country_event = {
 			}
 		}
 	}
-	#陆军司令
-	option = {
-		name = mt_leader_event.2.d
-		#创建具体的领袖
-		while = {
-			count = leader_amount
-			create_leader = {
-				class = general
-				species = owner_main_species
-				name = random
-				skill = 10
-				traits = {
-					trait = leader_trait_adventurous_spirit_3
-					trait = leader_trait_eager_2
-					trait = leader_trait_erudite
-					trait = leader_trait_cyborg
-					trait = leader_trait_synthetic
-					trait = leader_trait_psionic
-					trait = leader_trait_chosen
-					trait = leader_trait_composer_chosen
-					trait = leader_trait_instrument_chosen
-					trait = leader_trait_eater_chosen
-					trait = leader_trait_whisperers_chosen
-					trait = leader_trait_brainslug
-					trait = leader_trait_legendary_scientific_diplomacy_3
-					trait = leader_trait_legendary_great_inventor_3
-					trait = leader_trait_kidnapper_3
-					trait = leader_trait_interrogator_3
-					trait = leader_trait_industrial_espionage_3
-					trait = leader_trait_crusader_3
-					trait = leader_trait_chainbreaker
-					trait = leader_trait_honored_warmaster
-					trait = leader_trait_academia_recruiter
-					trait = leader_trait_pilferer
-					trait = leader_trait_supreme_warrior
-					trait = leader_trait_bellicose
-					trait = leader_trait_legendary_genius_councilor_general
-					trait = leader_trait_legendary_genius_general
-				}
-				effect = {
-					set_leader_flag = legendary_leader
-					set_leader_flag = immune_to_negative_traits
-				}
+}
+
+#培养传统：满级给特质
+country_event = {
+	id = mt_leader_event.8
+	hide_window = yes
+ 	is_triggered_only = yes
+	trigger = {
+		has_active_tradition = tr_mt_develop_1
+		from = {
+			has_skill = 10
+			not = {
+				has_trait = leader_trait_mt_develop_scientist
+				has_trait = leader_trait_mt_develop_commander
+				has_trait = leader_trait_mt_develop_official
 			}
 		}
 	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_trait_mt_develop_scientist
+			}
+			if = {
+				limit = {
+					leader_class = commander
+				}
+				add_trait = leader_trait_mt_develop_commander
+			}
+			if = {
+				limit = {
+					leader_class = official
+				}
+				add_trait = leader_trait_mt_develop_official
+			}
+
+		}
+	}
+
 }

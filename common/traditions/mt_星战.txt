@@ -12,16 +12,16 @@ tr_mt_starwar_finish = {
 	#船体伤害+25%
 	modifier = {
 		ship_hull_damage_mult = 0.25
-		ascension_perks_add = 1 
+		ascension_perks_add = 1
 	}
 }
 
 tr_mt_starwar_1 = {
 	#司令部计划
-	#舰队司令等级上限+3
+	#指挥官上限+2
 
 	modifier = {
-		admiral_skill_levels = 3
+		country_commander_cap_add = 2
 	}
 
 	ai_weight = {
@@ -67,7 +67,7 @@ tr_mt_starwar_4 = {
 	}
 	custom_tooltip_with_modifiers = tr_mt_starwar_4_desc
 	modifier = {
-		
+
 	}
 
 	ai_weight = {

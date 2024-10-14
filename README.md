@@ -39,6 +39,10 @@ The changes that have been adopted into the Extra Traditions mod will be removed
 - Capital Tradition
   - [Added] After the capital is moved or lost, the BUFF of the capital tradition will automatically move to the new capital every January 1st.
 
+**Councils**
+
+* Add councils for some traditions.
+
 **Localization Translation**
 
 - Native support for Chinese.
@@ -101,6 +105,9 @@ If you need to make more traditional mods compatible with other excellent mods, 
 * 首都传统
   * [新增] 当首都迁移或者丢失首都之后，将会每年一号自动将首都传统的BUFF迁移至新首都。
 
+**议程**
+
+* 为部分传统增加了议程解锁。
 
 **本地化翻译**
 

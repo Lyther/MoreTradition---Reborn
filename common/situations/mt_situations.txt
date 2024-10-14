@@ -1,0 +1,155 @@
+### 局势：生产改革
+
+situation_mt_produce = {
+	category = neutral
+	picture = GFX_evt_city_ruins
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_ascension
+	on_progress_complete = {
+		custom_tooltip = "situation_mt_produce_outcome"
+		hidden_effect = {
+			situation_event = { id = mt_situations_event.5 }
+		}
+		set_situation_locked = yes
+	}
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.2 days = 1 }
+			}
+			custom_tooltip = "stage_mt_produce_effects"
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 200
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.3 }
+			}
+			custom_tooltip = "stage_mt_produce_effects"
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 400
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.4 }
+			}
+			custom_tooltip = "stage_mt_produce_effects"
+		}
+	}
+	approach = {
+		#无形之手
+		#-20%，-5%影响力
+		name = situation_mt_produce_invisiblehand
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = "approach_mt_produce_invisiblehand_tt"
+		}
+		ai_weight = {
+			base = 0
+		}
+		modifier = {
+			country_influence_produces_mult = -0.05
+		}
+	}
+	approach = {
+		#缓步推进
+		#无加成，-10%影响力
+		name = situation_mt_produce_slowadvance
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = "approach_mt_produce_slowadvance_tt"
+		}
+		default = yes
+		ai_weight = {
+			base = 10
+		}
+		modifier = {
+			country_influence_produces_mult = -0.1
+		}
+	}
+	approach = {
+		#积极执行
+		#+20%，-15%影响力
+		name = situation_mt_produce_aggressiveexecution
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = "approach_mt_produce_aggressiveexecution_tt"
+		}
+		ai_weight = {
+			base = 0
+		}
+		modifier = {
+			country_influence_produces_mult = -0.15
+		}
+	}
+	monthly_progress = {
+		base = 5
+		#解决方案
+		modifier = {
+			mult = 0.8
+			desc = "situation_mt_produce_invisiblehand_approach_tt"
+			current_situation_approach = situation_mt_produce_invisiblehand
+		}
+		modifier = {
+			mult = 1.2
+			desc = "situation_mt_produce_aggressiveexecution_approach_tt"
+			current_situation_approach = situation_mt_produce_aggressiveexecution
+		}
+
+		#传统加成
+		modifier = {
+			mult = 1.05
+			desc = "tr_mt_produce_modifier"
+			owner = { has_active_tradition = tr_mt_produce_1_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_mt_produce_modifier"
+			owner = { has_active_tradition = tr_mt_produce_2_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_mt_produce_modifier"
+			owner = { has_active_tradition = tr_mt_produce_3_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_mt_produce_modifier"
+			owner = { has_active_tradition = tr_mt_produce_4_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_mt_produce_modifier"
+			owner = { has_active_tradition = tr_mt_produce_5_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_mt_produce_modifier"
+			owner = { has_active_tradition = tr_mt_produce_finish_situation }
+		}
+
+		#事件（flag）
+		modifier = {
+			mult = 0
+			desc = "situation_mt_produce_pause_desc"
+			has_situation_flag = situation_mt_produce_pause
+		}
+
+	}
+
+	#终止情境
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+		}
+	}
+}

@@ -1,13 +1,8 @@
 tr_mt_exegalitarian_adopt = {
-	possible = {
-		OR = {
-			has_ethic = ethic_fanatic_egalitarian
-			has_ethic = ethic_egalitarian
-		}
-	}
 	#派系凝聚力收益+50%
 	modifier = {
 		pop_factions_unity_produces_mult = 0.5
+		pop_ethic_egalitarian_attraction_mult = 0.5
 	}
 }
 
@@ -16,7 +11,7 @@ tr_mt_exegalitarian_finish = {
 	modifier = {
 		planet_jobs_specialist_produces_mult = 0.1
 		pop_ethic_egalitarian_attraction_mult = 0.5
-		ascension_perks_add = 1 
+		ascension_perks_add = 1
 	}
 }
 

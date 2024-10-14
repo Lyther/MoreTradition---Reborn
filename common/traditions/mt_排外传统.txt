@@ -1,13 +1,8 @@
 tr_mt_exxenophobe_adopt = {
-	possible = {
-		OR = {
-			has_ethic = ethic_fanatic_xenophobe
-			has_ethic = ethic_xenophobe
-		}
-	}
 	#恒星基地影响力-25%
 	modifier = {
 		country_starbase_influence_cost_mult = -0.25
+		pop_ethic_xenophobe_attraction_mult = 0.5
 	}
 }
 
@@ -16,7 +11,7 @@ tr_mt_exxenophobe_finish = {
 	modifier = {
 		pop_growth_speed = 0.25
 		pop_ethic_xenophobe_attraction_mult = 0.5
-		ascension_perks_add = 1 
+		ascension_perks_add = 1
 	}
 }
 
@@ -50,13 +45,13 @@ tr_mt_exxenophobe_2 = {
 
 tr_mt_exxenophobe_3 = {
 	#广泛定居
-	#殖民地发展速度+25%
+	#殖民地发展速度+50%
 
 	possible = {
 		has_tradition = tr_mt_exxenophobe_1
 	}
 	modifier = {
-		planet_colony_development_speed_mult = 0.25
+		planet_colony_development_speed_mult = 0.5
 		pop_ethic_xenophobe_attraction_mult = 0.1
 	}
 

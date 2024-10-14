@@ -14,7 +14,7 @@ tr_mt_seektruth_finish = {
 	custom_tooltip_with_modifiers = tr_mt_seektruth_finish_desc
 
 	modifier = {
-		ascension_perks_add = 1 
+		ascension_perks_add = 1
 	}
 }
 

@@ -43,7 +43,7 @@ artifact_mt_exhibition = {
 	resources = {
 		category = artifact_actions
 		cost = {
-			minor_artifacts = 250
+			minor_artifacts = 200
 		}
 	}
 
@@ -64,7 +64,7 @@ artifact_mt_exhibition = {
 
 	effect = {
 		add_resource = {
-			influence = 250
+			influence = 100
 		}
 		custom_tooltip = artifact_mt_exhibition_effect
 		add_monthly_resource_mult = {
