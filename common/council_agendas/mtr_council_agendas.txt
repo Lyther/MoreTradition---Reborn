@@ -1,36 +1,6 @@
 @mt_base_tradition_agenda_cost = 7000
 @mt_short_agenda_cost = 3500
 
-#生产改革
-agenda_mt_produce = {
-	agenda_cost = @mt_base_tradition_agenda_cost
-	allow = {
-		has_tradition = tr_mt_produce_adopt
-	}
-	potential = {
-		has_paragon_dlc = yes
-	}
-	modifier = {
-		planet_jobs_produces_mult = 0.05
-	}
-	finish_modifier = agenda_mt_produce_finish
-}
-
-#聚焦科研
-agenda_mt_research = {
-	agenda_cost = @mt_base_tradition_agenda_cost
-	allow = {
-		has_tradition = tr_mt_research_adopt
-	}
-	potential = {
-		has_paragon_dlc = yes
-	}
-	modifier = {
-		planet_researchers_produces_mult = 0.15
-	}
-	finish_modifier = agenda_mt_research_finish
-}
-
 agenda_perfect_planet = {
 	agenda_cost = @mt_base_tradition_agenda_cost
 	allow = {
@@ -39,11 +9,9 @@ agenda_perfect_planet = {
 	potential = {
 		always = yes
 	}
-	modifiers = {
-		{
-			planet_decision_enact_speed_mult = 0.25
-			terraform_speed_mult = 0.10
-		}
+	modifier = {
+		planet_decision_enact_speed_mult = 0.25
+		terraform_speed_mult = 0.10
 	}
 	finish_modifier = agenda_perfect_planet
 }
@@ -56,10 +24,8 @@ agenda_promising_leaders = {
 	potential = {
 		check_variable_arithmetic = { which = value:country_num_unlockable_council_slots value > 0 }
 	}
-	modifiers = {
-		{
-			councilor_exp_gain = 0.15
-		}
+	modifier = {
+		councilor_exp_gain = 0.15
 	}
 	finish_modifier = agenda_promising_leaders
 	effect = {
@@ -75,11 +41,9 @@ agenda_penetration_improvement = {
 	potential = {
 		always = yes
 	}
-	modifiers = {
-		{
-			ship_armor_penetration_mult = 0.10
-			ship_shield_penetration_mult = 0.10
-		}
+	modifier = {
+		ship_armor_penetration_mult = 0.10
+		ship_shield_penetration_mult = 0.10
 	}
 	finish_modifier = agenda_penetration_improvement
 }
@@ -92,12 +56,10 @@ agenda_total_wars = {
 	potential = {
 		always = yes
 	}
-	modifiers = {
-		{
-			ship_weapon_damage = 0.25
-			ship_weapon_range_mult = 0.10
-			ship_fire_rate_mult = 0.05
-		}
+	modifier = {
+		ship_weapon_damage = 0.25
+		ship_weapon_range_mult = 0.10
+		ship_fire_rate_mult = 0.05
 	}
 	finish_modifier = agenda_total_wars
 }
@@ -110,12 +72,10 @@ agenda_insane_technologies = {
 	potential = {
 		always = yes
 	}
-	modifiers = {
-		{
-			planet_researchers_physics_research_produces_add = 1.00
-			planet_researchers_society_research_produces_add = 1.00
-			planet_researchers_engineering_research_produces_add = 1.00
-		}
+	modifier = {
+		planet_researchers_physics_research_produces_add = 1.00
+		planet_researchers_society_research_produces_add = 1.00
+		planet_researchers_engineering_research_produces_add = 1.00
 	}
 	finish_modifier = agenda_insane_technologies
 }
