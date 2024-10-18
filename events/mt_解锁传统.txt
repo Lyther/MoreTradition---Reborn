@@ -19,3 +19,183 @@ country_event = {
 		}
 	}
 }
+
+#改造传统：血肉苦弱
+country_event = {
+	id = mt_flag_event.10
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_machine_age_dlc = yes
+				NOT = { has_origin = origin_cybernetic_creed }
+			}
+			hidden_effect = {
+				country_event = { id = cyber.1 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_machine_age_dlc = yes
+				has_origin = origin_cybernetic_creed
+			}
+			hidden_effect = {
+				country_event = { id = machine_age.100 }
+			}
+		}
+		else = {
+			hidden_effect = {
+				country_event = { id = utopia.2500 }
+			}
+		}
+	}
+}
+
+#改造传统：取消血肉苦弱
+country_event = {
+	id = mt_flag_event.11
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_situation = {
+			limit = {
+				is_situation_type = situation_cyberization_hive
+			}
+			destroy_situation = this
+		}
+		random_situation = {
+			limit = {
+				is_situation_type = situation_cyberization
+			}
+			destroy_situation = this
+		}
+		random_situation = {
+			limit = {
+				is_situation_type = situation_cybernetic_creed_cyberization
+			}
+			destroy_situation = this
+		}
+		abort_special_project = {
+			type = FLESH_IS_WEAK_PROJECT
+		}
+	}
+}
+
+#改造传统：合成进化
+country_event = {
+	id = mt_flag_event.12
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_machine_age_dlc = yes
+				NOT = { has_origin = origin_synthetic_fertility }
+			}
+			hidden_effect = {
+				country_event = { id = synth.1 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_machine_age_dlc = yes
+				has_origin = origin_synthetic_fertility
+			}
+			hidden_effect = {
+				country_event = { id = machine_age.3125 }
+			}
+		}
+		else = {
+			hidden_effect = {
+				country_event = { id = utopia.2550 }
+			}
+		}
+	}
+}
+
+#改造传统：取消合成进化
+country_event = {
+	id = mt_flag_event.13
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_situation = {
+			limit = {
+				is_situation_type = situation_digitization
+			}
+			destroy_situation = this
+		}
+		random_situation = {
+			limit = {
+				is_situation_type = situation_synthetic_fertility_synthesization
+			}
+			destroy_situation = this
+		}
+		random_situation = {
+			limit = {
+				is_situation_type = situation_cybernetic_creed_cyberization
+			}
+			destroy_situation = this
+		}
+		abort_special_project = {
+			type = SYNTHETIC_EVOLUTION_PROJECT
+		}
+	}
+}
+
+#育种传统：设计进化
+country_event = {
+	id = mt_flag_event.20
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		country_event = {
+			id = utopia.2700
+		}
+	}
+}
+
+#育种传统：掌控进化
+country_event = {
+	id = mt_flag_event.21
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		country_event = {
+			id = utopia.2703
+		}
+	}
+}
+
+#通灵传统：心胜于物
+country_event = {
+	id = mt_flag_event.30
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		country_event = {
+			id = utopia.2600
+		}
+	}
+}
+
+#通灵传统：超凡入圣
+country_event = {
+	id = mt_flag_event.31
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		country_event = {
+			id = utopia.2650
+		}
+	}
+}

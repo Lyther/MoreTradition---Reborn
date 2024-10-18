@@ -1,0 +1,30 @@
+mt_crisis_path = {
+	crisis_currency = "crisis_energy"
+
+	levels = {
+		mt_crisis_level_1
+		mt_crisis_level_2
+		mt_crisis_level_3
+		mt_crisis_level_4
+		mt_crisis_level_5
+	}
+
+	objectives = {
+		crisobj_destroy_empires
+		crisobj_destroy_enemy_ships
+		crisobj_destroy_starbases
+		crisobj_purge_pops
+		crisobj_destroy_worlds
+		crisobj_conquer_worlds
+		crisobj_vassalise_empires
+		crisobj_have_vassals
+		crisobj_perform_upsetting_operations
+		crisobj_be_in_breach_of_galcom_law
+		crisobj_research_tech
+		crisobj_research_thesis
+		crisobj_have_scholarium_vassals
+		crisobj_neural_chips
+		crisobj_have_science_nexuses
+		crisobj_galcom_science_resolution
+	}
+}

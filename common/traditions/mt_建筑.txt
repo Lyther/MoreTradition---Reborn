@@ -2,12 +2,15 @@ tr_mt_building_adopt = {
 	#区划维护费-25%
 	modifier = {
 		planet_districts_upkeep_mult = -0.25
+		planet_buildings_upkeep_mult = -0.25
 	}
 }
 
 tr_mt_building_finish = {
 	modifier = {
 		planet_districts_cost_mult = -0.5
+		planet_buildings_cost_mult = -0.5
+		empire_size_districts_mult = -0.25
 		ascension_perks_add = 1
 	}
 }
@@ -18,6 +21,7 @@ tr_mt_building_1 = {
 
 	modifier = {
 		district_mining_max = 3
+		planet_max_districts_add = 1
 	}
 
 	ai_weight = {
@@ -31,6 +35,7 @@ tr_mt_building_2 = {
 
 	modifier = {
 		district_generator_max = 3
+		planet_max_districts_add = 1
 	}
 
 	ai_weight = {
@@ -44,6 +49,7 @@ tr_mt_building_3 = {
 
 	modifier = {
 		planet_jobs_worker_produces_mult = 0.15
+		planet_jobs_specialist_produces_mult = 0.15
 	}
 
 	ai_weight = {
@@ -78,7 +84,7 @@ tr_mt_building_5 = {
 
 	modifier = {
 		job_researcher_add = 2
-
+		job_researcher_per_pop = 0.05
 	}
 	tradition_swap = {
 		name = tr_mt_building_5
@@ -89,7 +95,8 @@ tr_mt_building_5 = {
 			is_hive_empire = yes
 		}
 		modifier = {
-			job_brain_drone_add =2
+			job_brain_drone_add = 2
+			job_brain_drone_per_pop = 0.05
 		}
 	}
 	tradition_swap = {
@@ -101,7 +108,8 @@ tr_mt_building_5 = {
 			is_machine_empire = yes
 		}
 		modifier = {
-			job_calculator_add =2
+			job_calculator_add = 2
+			job_calculator_per_pop = 0.05
 		}
 	}
 

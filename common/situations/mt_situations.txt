@@ -95,12 +95,12 @@ situation_mt_produce = {
 		#解决方案
 		modifier = {
 			mult = 0.8
-			desc = "situation_mt_produce_invisiblehand_approach_tt"
+			desc = "situation_mt_produce_invisiblehand"
 			current_situation_approach = situation_mt_produce_invisiblehand
 		}
 		modifier = {
 			mult = 1.2
-			desc = "situation_mt_produce_aggressiveexecution_approach_tt"
+			desc = "situation_mt_produce_aggressiveexecution"
 			current_situation_approach = situation_mt_produce_aggressiveexecution
 		}
 
@@ -146,6 +146,275 @@ situation_mt_produce = {
 	}
 
 	#终止情境
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+		}
+	}
+}
+
+### 局势：微缩传统
+
+situation_mt_smallarms = {
+	category = neutral
+	picture = GFX_evt_astral_rift
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_ascension
+	on_progress_complete = {
+		custom_tooltip = "situation_mt_smallarms_outcome"
+		hidden_effect = {
+			situation_event = { id = mt_situations_event.17 }
+		}
+		set_situation_locked = yes
+	}
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+			on_first_enter = {
+				set_situation_flag = situation_mt_smallarms_pause
+			}
+			custom_tooltip = "stage_mt_smallarms_start_effects"
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 200
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.10 }
+			}
+			custom_tooltip = "stage_mt_smallarms_s_arc_effects"
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 300
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.11 }
+			}
+			custom_tooltip = "stage_mt_smallarms_s_lance_effects"
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 400
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.12 }
+			}
+			custom_tooltip = "stage_mt_smallarms_m_arc_effects"
+		}
+		stage_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 500
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.13 }
+			}
+			custom_tooltip = "stage_mt_smallarms_m_lance_effects"
+		}
+		stage_6 = {
+			icon = GFX_situation_stage_6
+			icon_background = GFX_situation_stage_frame_blue
+			end = 600
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.14 }
+			}
+			custom_tooltip = "stage_mt_smallarms_l_arc_effects"
+		}
+		stage_7 = {
+			icon = GFX_situation_stage_7
+			icon_background = GFX_situation_stage_frame_blue
+			end = 800
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.15 }
+			}
+			custom_tooltip = "stage_mt_smallarms_l_lance_effects"
+		}
+		stage_8 = {
+			icon = GFX_situation_stage_8
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1000
+			on_first_enter = {
+				situation_event = { id = mt_situations_event.16 }
+			}
+			custom_tooltip = "stage_mt_smallarms_finish_effects"
+		}
+	}
+	approach = {
+		name = situation_mt_smallarms_no_funding
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = "mt_smallarms_no_funding_tt"
+		}
+		ai_weight = {
+			base = 0
+		}
+		modifier = {
+			country_base_energy_produces_add = -20
+		}
+	}
+	approach = {
+		name = situation_mt_smallarms_funding
+		icon = GFX_situation_approach_energy_credits
+		icon_background = GFX_situation_approach_bg_green
+		default = yes
+		on_select = {
+			custom_tooltip = "mt_smallarms_funding_tt"
+		}
+		ai_weight = {
+			base = 10
+		}
+		modifier = {
+			country_base_energy_produces_add = -30
+			country_energy_produces_mult = -0.05
+			country_physics_tech_research_speed = 0.05
+		}
+	}
+	approach = {
+		name = situation_mt_smallarms_research
+		icon = GFX_situation_approach_pop
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = "mt_smallarms_research_tt"
+		}
+		ai_weight = {
+			base = 0
+		}
+		modifier = {
+			country_base_energy_produces_add = -50
+			country_energy_produces_mult = -0.15
+			country_physics_research_produces_mult = 0.15
+		}
+	}
+	monthly_progress = {
+		base = 5
+		modifier = {
+			mult = 1.2
+			desc = "situation_mt_smallarms_funding"
+			current_situation_approach = situation_mt_smallarms_funding
+		}
+		modifier = {
+			mult = 1.5
+			desc = "situation_mt_smallarms_research"
+			current_situation_approach = situation_mt_smallarms_research
+		}
+		modifier = {
+			add = 5
+			desc = "situation_mt_smallarms_has_disruptor_1_tt"
+			owner = { has_technology = tech_disruptors_1 }
+		}
+		modifier = {
+			add = 5
+			desc = "situation_mt_smallarms_has_disruptor_2_tt"
+			owner = { has_technology = tech_disruptors_2 }
+		}
+		modifier = {
+			add = 5
+			desc = "situation_mt_smallarms_has_disruptor_3_tt"
+			owner = { has_technology = tech_disruptors_3 }
+		}
+		modifier = {
+			add = 5
+			desc = "situation_mt_smallarms_has_lasers_2_tt"
+			owner = { has_technology = tech_lasers_2 }
+		}
+		modifier = {
+			add = 5
+			desc = "situation_mt_smallarms_has_lasers_3_tt"
+			owner = { has_technology = tech_lasers_3 }
+		}
+		modifier = {
+			add = 5
+			desc = "situation_mt_smallarms_has_lasers_4_tt"
+			owner = { has_technology = tech_lasers_4 }
+		}
+		modifier = {
+			add = 5
+			desc = "situation_mt_smallarms_has_lasers_5_tt"
+			owner = { has_technology = tech_lasers_5 }
+		}
+		modifier = {
+			add = 10
+			desc = "situation_mt_smallarms_has_arc_emitter_1_tt"
+			owner = { has_technology = tech_arc_emitter_1 }
+		}
+		modifier = {
+			add = 10
+			desc = "situation_mt_smallarms_has_arc_emitter_2_tt"
+			owner = { has_technology = tech_arc_emitter_2 }
+		}
+		modifier = {
+			add = 10
+			desc = "situation_mt_smallarms_has_energy_lance_1_tt"
+			owner = { has_technology = tech_energy_lance_1 }
+		}
+		modifier = {
+			add = 10
+			desc = "situation_mt_smallarms_has_energy_lance_2_tt"
+			owner = { has_technology = tech_energy_lance_2 }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "situation_mt_smallarms_technology_researched"
+			owner = { has_technology = tech_mt_s_smallarc }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "situation_mt_smallarms_technology_researched"
+			owner = { has_technology = tech_mt_m_smallarc }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "situation_mt_smallarms_technology_researched"
+			owner = { has_technology = tech_mt_l_smallarc }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "situation_mt_smallarms_technology_researched"
+			owner = { has_technology = tech_mt_s_smalllance }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "situation_mt_smallarms_technology_researched"
+			owner = { has_technology = tech_mt_m_smalllance }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "situation_mt_smallarms_technology_researched"
+			owner = { has_technology = tech_mt_l_smalllance }
+		}
+		modifier = {
+			mult = 0.01
+			desc = "situation_mt_smallarms_on_research"
+			owner = {
+				OR = {
+					has_tech_option = tech_mt_s_smallarc
+					has_tech_option = tech_mt_m_smallarc
+					has_tech_option = tech_mt_l_smallarc
+					has_tech_option = tech_mt_s_smalllance
+					has_tech_option = tech_mt_s_smalllance
+					has_tech_option = tech_mt_s_smalllance
+				}
+			}
+		}
+		modifier = {
+			mult = 0
+			desc = "situation_mt_smallarms_pause_desc"
+			has_situation_flag = situation_mt_smallarms_pause
+		}
+	}
+	triggered_blocked_desc = {
+		text = "situation_mt_smallarms_battleships_needed_desc"
+		trigger = {
+			situation_progress >= 800
+			owner = {
+				NOT = { has_technology = tech_battleships }
+			}
+		}
+	}
 	abort_trigger = {
 		OR = {
 			NOT = { exists = target.owner }

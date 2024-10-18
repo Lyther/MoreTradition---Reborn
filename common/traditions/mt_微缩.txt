@@ -1,4 +1,10 @@
 tr_mt_smallarms_adopt = {
+	on_enabled = {
+		start_situation = {
+			type = situation_mt_smallarms
+			target = root
+		}
+	}
 	modifier = {
 		weapon_type_energy_weapon_fire_rate_mult = 0.1
 		country_physics_research_produces_mult = 0.05
@@ -6,93 +12,88 @@ tr_mt_smallarms_adopt = {
 }
 
 tr_mt_smallarms_finish = {
-	on_enabled = {
-		add_research_option = tech_mt_x_smallarc
-		add_research_option = tech_mt_t_smallarc
-	}
 	modifier = {
 		weapon_type_energy_weapon_damage_mult = 0.2
 		ascension_perks_add = 1
 	}
+	tradition_swap = {
+		name = tr_mt_smallarms_finish_situation
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			NOR = {
+				has_country_flag = tr_mt_smallarms_unlocked
+			}
+		}
+		custom_tooltip = tr_mt_smallarms_finish_effects
+	}
 }
 
 tr_mt_smallarms_1 = {
-
-	modifier = {
-		country_base_energy_produces_add = -20
+	on_enabled = {
+		random_situation = {
+			limit = {
+				is_situation_type = situation_mt_smallarms
+			}
+			remove_situation_flag = situation_mt_smallarms_pause
+		}
 	}
-
+	modifier = {
+		country_base_physics_research_produces_add = 10
+	}
 	ai_weight = {
 		factor = 10000
 	}
 }
 
 tr_mt_smallarms_2 = {
-
 	possible = {
 		has_tradition = tr_mt_smallarms_1
 	}
-
-	on_enabled = {
-		add_research_option = tech_mt_s_smallarc
-		add_research_option = tech_mt_m_smallarc
-	}
 	modifier = {
+		country_base_physics_research_produces_add = 10
+		ship_shield_penetration_add = 0.25
 	}
-
 	ai_weight = {
 		factor = 1000
 	}
 }
 
 tr_mt_smallarms_3 = {
-
 	possible = {
 		has_tradition = tr_mt_smallarms_2
 	}
-
-	on_enabled = {
-		add_research_option = tech_mt_l_smallarc
-	}
 	modifier = {
+		country_base_physics_research_produces_add = 10
+		ship_armor_penetration_add = 0.25
 	}
-
 	ai_weight = {
 		factor = 5000
 	}
 }
 
 tr_mt_smallarms_4 = {
-
 	possible = {
 		has_tradition = tr_mt_smallarms_1
 	}
-
-	on_enabled = {
-		add_research_option = tech_mt_s_smalllance
-		add_research_option = tech_mt_m_smalllance
-	}
 	modifier = {
+		country_base_physics_research_produces_add = 10
+		s_slot_weapon_damage_mult = 0.5
+		m_slot_weapon_damage_mult = 0.5
 	}
-
 	ai_weight = {
 		factor = 5000
 	}
 }
 
 tr_mt_smallarms_5 = {
-
 	possible = {
 		has_tradition = tr_mt_smallarms_4
-
-	}
-
-	on_enabled = {
-		add_research_option = tech_mt_l_smalllance
 	}
 	modifier = {
+		country_base_physics_research_produces_add = 10
+		l_slot_weapon_damage_mult = 0.5
 	}
-
 	ai_weight = {
 		factor = 5000
 	}

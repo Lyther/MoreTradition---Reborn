@@ -198,3 +198,441 @@ situation_event = {
 		}
 	}
 }
+
+#微缩传统局势
+situation_event = {
+	id = mt_situations_event.10
+	title = "mt_situations_event.10.name"
+	desc = "mt_situations_event.10.desc"
+	picture = GFX_evt_cosmic_storms_preparation
+	show_sound = event_energy_field
+	is_triggered_only = yes
+	situation = this
+
+	option = {
+		name = "mt_situations_event.10.a"
+		owner = {
+			add_research_option = tech_mt_s_smallarc
+		}
+	}
+	option = {
+		name = "mt_situations_event.10.b"
+		allow = {
+			owner = { has_technology = tech_mt_s_smallarc }
+		}
+		owner = {
+			add_resource = {
+				rare_crystals = 100
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 3
+				min = 300
+				max = 50000
+			}
+		}
+	}
+	option = {
+		name = "mt_situations_event.10.c"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+			add_tech_progress = {
+				tech = tech_mt_s_smallarc
+				progress = 0.25
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = mt_situations_event.11
+	title = "mt_situations_event.11.name"
+	desc = "mt_situations_event.11.desc"
+	picture = GFX_evt_cosmic_storms_preparation
+	show_sound = event_energy_field
+	is_triggered_only = yes
+	situation = this
+
+	option = {
+		name = "mt_situations_event.11.a"
+		owner = {
+			add_research_option = tech_mt_s_smalllance
+		}
+	}
+	option = {
+		name = "mt_situations_event.11.b"
+		allow = {
+			owner = { has_technology = tech_mt_s_smalllance }
+		}
+		owner = {
+			add_resource = {
+				rare_crystals = 100
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 3
+				min = 300
+				max = 50000
+			}
+		}
+	}
+	option = {
+		name = "mt_situations_event.11.c"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 1000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -1000
+			}
+			add_tech_progress = {
+				tech = tech_mt_s_smalllance
+				progress = 0.25
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = mt_situations_event.12
+	title = "mt_situations_event.12.name"
+	desc = "mt_situations_event.12.desc"
+	picture = GFX_evt_cosmic_storms_preparation
+	show_sound = event_energy_field
+	is_triggered_only = yes
+	situation = this
+
+	option = {
+		name = "mt_situations_event.12.a"
+		owner = {
+			add_research_option = tech_mt_m_smallarc
+		}
+	}
+	option = {
+		name = "mt_situations_event.12.b"
+		allow = {
+			owner = { has_technology = tech_mt_m_smallarc }
+		}
+		owner = {
+			add_resource = {
+				rare_crystals = 200
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 6
+				min = 500
+				max = 100000
+			}
+		}
+	}
+	option = {
+		name = "mt_situations_event.12.c"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -2500
+			}
+			add_tech_progress = {
+				tech = tech_mt_m_smallarc
+				progress = 0.25
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = mt_situations_event.13
+	title = "mt_situations_event.13.name"
+	desc = "mt_situations_event.13.desc"
+	picture = GFX_evt_cosmic_storms_preparation
+	show_sound = event_energy_field
+	is_triggered_only = yes
+	situation = this
+
+	option = {
+		name = "mt_situations_event.13.a"
+		owner = {
+			add_research_option = tech_mt_m_smalllance
+		}
+	}
+	option = {
+		name = "mt_situations_event.13.b"
+		allow = {
+			owner = { has_technology = tech_mt_m_smalllance }
+		}
+		owner = {
+			add_resource = {
+				rare_crystals = 200
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 6
+				min = 500
+				max = 100000
+			}
+		}
+	}
+	option = {
+		name = "mt_situations_event.13.c"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -2500
+			}
+			add_tech_progress = {
+				tech = tech_mt_m_smalllance
+				progress = 0.25
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = mt_situations_event.14
+	title = "mt_situations_event.14.name"
+	desc = "mt_situations_event.14.desc"
+	picture = GFX_evt_cosmic_storms_preparation
+	show_sound = event_energy_field
+	is_triggered_only = yes
+	situation = this
+
+	option = {
+		name = "mt_situations_event.14.a"
+		owner = {
+			add_research_option = tech_mt_l_smallarc
+		}
+	}
+	option = {
+		name = "mt_situations_event.14.b"
+		allow = {
+			owner = { has_technology = tech_mt_l_smallarc }
+		}
+		owner = {
+			add_resource = {
+				rare_crystals = 500
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 12
+				min = 2000
+				max = 500000
+			}
+		}
+	}
+	option = {
+		name = "mt_situations_event.14.c"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 5000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -5000
+			}
+			add_tech_progress = {
+				tech = tech_mt_l_smallarc
+				progress = 0.25
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = mt_situations_event.15
+	title = "mt_situations_event.15.name"
+	desc = "mt_situations_event.15.desc"
+	picture = GFX_evt_cosmic_storms_preparation
+	show_sound = event_energy_field
+	is_triggered_only = yes
+	situation = this
+
+	option = {
+		name = "mt_situations_event.15.a"
+		owner = {
+			add_research_option = tech_mt_l_smalllance
+		}
+	}
+	option = {
+		name = "mt_situations_event.15.b"
+		allow = {
+			owner = { has_technology = tech_mt_l_smalllance }
+		}
+		owner = {
+			add_resource = {
+				rare_crystals = 500
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = 12
+				min = 2000
+				max = 500000
+			}
+		}
+	}
+	option = {
+		name = "mt_situations_event.15.c"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 5000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -5000
+			}
+			add_tech_progress = {
+				tech = tech_mt_l_smalllance
+				progress = 0.25
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = mt_situations_event.16
+	title = "mt_situations_event.16.name"
+	desc = "mt_situations_event.16.desc"
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_ringworld_build_start
+	is_triggered_only = yes
+	situation = this
+
+	option = {
+		name = "mt_situations_event.16.a"
+		owner = {
+			add_research_option = tech_battleships
+		}
+	}
+	option = {
+		name = "mt_situations_event.16.b"
+		allow = {
+			owner = { has_technology = tech_battleships }
+		}
+		owner = {
+			add_resource = {
+				rare_crystals = 1000
+			}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = 24
+				min = 5000
+				max = 1000000
+			}
+		}
+	}
+	option = {
+		name = "mt_situations_event.16.c"
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 15000
+				}
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 5000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				energy = -15000
+				alloys = -5000
+			}
+			add_tech_progress = {
+				tech = tech_battleships
+				progress = 0.25
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = mt_situations_event.17
+	title = "mt_situations_event.17.name"
+	desc = "mt_situations_event.17.desc"
+	picture = GFX_evt_vortex
+	show_sound = event_death_cult
+	is_triggered_only = yes
+	situation = this
+
+	option = {
+		name = EXCELLENT
+		owner = {
+			add_resource = {
+				rare_crystals = 2000
+			}
+			add_monthly_resource_mult = {
+				resource = alloys
+				value = 24
+				min = 15000
+				max = 1000000
+			}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = 24
+				min = 15000
+				max = 1000000
+			}
+			if = {
+				limit = {
+					has_tech_option = tech_titans
+				}
+				add_tech_progress = {
+					tech = tech_titans
+					progress = 0.25
+				}
+			}
+			else = {
+				add_research_option = tech_titans
+				add_research_option = tech_mt_x_smallarc
+				add_research_option = tech_mt_t_smallarc
+			}
+		}
+	}
+
+	after = {
+		destroy_situation = this
+		owner = {
+			hidden_effect = {
+				set_country_flag = tr_mt_smallarms_unlocked
+			}
+		}
+	}
+}

@@ -13,7 +13,7 @@ country_event = {
 	#具体生成舰队
 	immediate = {
 		create_fleet = {
-			name = "紧急舰队"
+			name = RANDOM
 			effect = {
 				set_owner = root
 				while = {
@@ -45,7 +45,7 @@ country_event = {
 	#具体生成舰队
 	immediate = {
 		create_fleet = {
-			name = "变形虫舰队"
+			name = RANDOM
 			effect = {
 				set_owner = root
 				while = {
@@ -77,7 +77,7 @@ country_event = {
 	#具体生成舰队
 	immediate = {
 		create_fleet = {
-			name = "缇扬奇舰队"
+			name = RANDOM
 			effect = {
 				set_owner = root
 				while = {

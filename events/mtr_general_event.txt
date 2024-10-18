@@ -1,0 +1,335 @@
+namespace = mtr_general_event
+
+country_event = {
+	id = mtr_general_event.0
+	title = "mtr_general_event.0.name"
+	desc = "mtr_general_event.0.desc"
+	picture = GFX_evt_towel
+	show_sound = select_click
+	is_triggered_only = yes
+
+	option = {
+		name = "mtr_general_event.0.a"
+		trigger = {
+			has_active_tradition = tr_mt_develop_4
+		}
+		hidden_effect = {
+			country_event = {
+				id = mt_leader_event.0
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.0.b"
+		trigger = {
+			OR = {
+				has_active_tradition = tr_mt_preparewar_finish
+				has_active_tradition = tr_mt_breeding_4
+				has_active_tradition = tr_mt_breeding_5
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.1
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.0.c"
+		trigger = {
+			has_active_tradition = tr_mt_transform_finish
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.2
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.0.d"
+		trigger = {
+			OR = {
+				has_active_tradition = tr_mt_breeding_adopt
+				has_active_tradition = tr_mt_breeding_finish
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.3
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.0.e"
+		trigger = {
+			OR = {
+				has_active_tradition = tr_mt_psychic_adopt
+				has_active_tradition = tr_mt_psychic_finish
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.4
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.0.f"
+	}
+}
+
+country_event = {
+	id = mtr_general_event.1
+	title = "mtr_general_event.1.name"
+	desc = "mtr_general_event.1.desc"
+	picture = GFX_evt_fleet_good
+	show_sound = select_fleet
+	is_triggered_only = yes
+
+	option = {
+		name = "mtr_general_event.1.a"
+		trigger = {
+			has_active_tradition = tr_mt_preparewar_finish
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = unity
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= 1000
+			}
+		}
+		add_resource = {
+			unity = -500
+			alloys = -1000
+		}
+		country_event = {
+			id = mt_fleet_event.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.1
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.1.b"
+		trigger = {
+			has_active_tradition = tr_mt_breeding_4
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = unity
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = food
+				value >= 10000
+			}
+		}
+		add_resource = {
+			unity = -500
+			food = -10000
+		}
+		country_event = {
+			id = mt_fleet_event.2
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.1
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.1.c"
+		trigger = {
+			has_active_tradition = tr_mt_breeding_5
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = unity
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = food
+				value >= 10000
+			}
+		}
+		add_resource = {
+			unity = -500
+			food = -10000
+		}
+		country_event = {
+			id = mt_fleet_event.3
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.1
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.1.d"
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mtr_general_event.2
+	title = "mtr_general_event.2.name"
+	desc = "mtr_general_event.2.desc"
+	picture = GFX_evt_cybernetic_creed
+	show_sound = event_slot_machine
+	is_triggered_only = yes
+
+	option = {
+		name = "mtr_general_event.2.a"
+		country_event = {
+			id = mt_flag_event.10
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.2
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.2.b"
+		country_event = {
+			id = mt_flag_event.11
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.2
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.2.c"
+		country_event = {
+			id = mt_flag_event.12
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.2
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.2.d"
+		country_event = {
+			id = mt_flag_event.13
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.2
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.2.e"
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mtr_general_event.3
+	title = "mtr_general_event.3.name"
+	desc = "mtr_general_event.3.desc"
+	picture = GFX_evt_genetic_modification
+	show_sound = event_engineered_evolution
+	is_triggered_only = yes
+
+	option = {
+		name = "mtr_general_event.3.a"
+		trigger = {
+			has_active_tradition = tr_mt_breeding_adopt
+		}
+		country_event = {
+			id = mt_flag_event.20
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.3
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.3.b"
+		trigger = {
+			has_active_tradition = tr_mt_breeding_finish
+		}
+		country_event = {
+			id = mt_flag_event.21
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.3
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.3.c"
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mtr_general_event.4
+	title = "mtr_general_event.4.name"
+	desc = "mtr_general_event.4.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_mind_over_matter
+	is_triggered_only = yes
+
+	option = {
+		name = "mtr_general_event.4.a"
+		trigger = {
+			has_active_tradition = tr_mt_psychic_adopt
+		}
+		country_event = {
+			id = mt_flag_event.30
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.4
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.4.b"
+		trigger = {
+			has_active_tradition = tr_mt_psychic_finish
+		}
+		country_event = {
+			id = mt_flag_event.31
+		}
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.4
+			}
+		}
+	}
+	option = {
+		name = "mtr_general_event.4.c"
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.0
+			}
+		}
+	}
+}

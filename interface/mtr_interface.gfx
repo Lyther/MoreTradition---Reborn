@@ -4,4 +4,10 @@ spriteTypes = {
 		name = "GFX_ship_mtr_brilliant_energy_emitter"
 		textureFile = "gfx/interface/component/ship_part_brilliant_energy_emitter.dds"
 	}
+	#飞升
+	spriteType = {
+		name = "GFX_ap_mt_crisis"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_mt_crisis.dds"
+		alwaystransparent = yes
+	}
 }

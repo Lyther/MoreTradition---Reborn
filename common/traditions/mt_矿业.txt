@@ -33,6 +33,7 @@ tr_mt_mining_2 = {
 
 	modifier = {
 		planet_miners_alloys_produces_add = 0.2
+		planet_miners_consumer_goods_produces_add = 0.2
 	}
 
 	ai_weight = {
@@ -79,7 +80,7 @@ tr_mt_mining_5 = {
 
 	modifier = {
 		planet_miners_engineering_research_produces_add = 2
-		planet_miners_rare_crystals_produces_add = 0.2
+		planet_miners_sr_living_metal_produces_add = 0.2
 	}
 
 	ai_weight = {

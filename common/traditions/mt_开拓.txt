@@ -2,6 +2,7 @@ tr_mt_reclaim_adopt = {
 	#岗位维护费-25%
 	modifier = {
 		planet_jobs_upkeep_mult = -0.25
+		starbase_building_build_speed_mult = 0.5
 	}
 }
 
@@ -9,6 +10,7 @@ tr_mt_reclaim_finish = {
 	#行星建造速度+50%
 	modifier = {
 		planet_building_build_speed_mult = 0.5
+		planet_max_districts_add = 2
 		ascension_perks_add = 1
 	}
 }
@@ -23,6 +25,7 @@ tr_mt_reclaim_1 = {
 		ship_colonizer_consumer_goods_cost_mult = -0.5
 		ship_colonizer_food_cost_mult = -0.5
 		ship_colonizer_minerals_cost_mult = -0.5
+		shipsize_colonizer_build_speed_mult = 1.5
 	}
 
 	ai_weight = {
@@ -53,6 +56,7 @@ tr_mt_reclaim_3 = {
 
 	modifier = {
 		planet_clear_blocker_time_mult = -0.25
+		terraform_speed_mult = 0.25
 	}
 
 	ai_weight = {
@@ -69,6 +73,7 @@ tr_mt_reclaim_4 = {
 
 	modifier = {
 		planet_building_build_speed_mult = 0.25
+		planet_max_buildings_add = 1
 	}
 
 	ai_weight = {

@@ -27,7 +27,7 @@ tr_mt_research_1 = {
 	#科研岗位维护费-5%
 
 	modifier = {
-		planet_researchers_upkeep_mult = -0.05
+		planet_researchers_upkeep_mult = -0.15
 	}
 
 	ai_weight = {

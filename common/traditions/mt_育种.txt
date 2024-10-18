@@ -1,10 +1,5 @@
 tr_mt_breeding_adopt = {
 	#食物产出+25%
-	on_enabled = {
-		hidden_effect = {
-			country_event = { id = utopia.2700 }
-		}
-	}
 	modifier = {
 		planet_jobs_food_produces_mult = 0.25
 	}
@@ -14,9 +9,6 @@ tr_mt_breeding_finish = {
 	on_enabled = {
 		add_research_option = tech_gene_tailoring
 		add_research_option = tech_glandular_acclimation
-		hidden_effect = {
-			country_event = { id = utopia.2703 }
-		}
 	}
 	modifier = {
 		ascension_perks_add = 1

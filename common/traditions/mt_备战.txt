@@ -1,7 +1,7 @@
 tr_mt_preparewar_adopt = {
-	#合金生产+5%
+	#合金生产+15%
 	modifier = {
-		planet_jobs_alloys_produces_mult = 0.05
+		planet_jobs_alloys_produces_mult = 0.15
 	}
 }
 
@@ -15,10 +15,10 @@ tr_mt_preparewar_finish = {
 
 tr_mt_preparewar_1 = {
 	#聚焦合金
-	#合金生产+10%
+	#合金生产+25%
 
 	modifier = {
-		planet_jobs_alloys_produces_mult = 0.1
+		country_alloys_produces_mult = 0.25
 	}
 
 	ai_weight = {
@@ -81,6 +81,7 @@ tr_mt_preparewar_5 = {
 
 	modifier = {
 		planet_army_build_speed_mult = 0.5
+		starbase_shipyard_build_speed_mult = 0.5
 	}
 
 	ai_weight = {

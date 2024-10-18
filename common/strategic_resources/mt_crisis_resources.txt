@@ -1,0 +1,12 @@
+########################
+###	Crisis Resources ###
+########################
+
+crisis_energy = {
+	tradable = no
+	category = other
+
+	ai_weight = {
+		weight = 2
+	}
+}

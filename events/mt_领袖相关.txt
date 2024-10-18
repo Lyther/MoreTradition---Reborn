@@ -7,9 +7,6 @@ country_event = {
 	picture = GFX_evt_board_meeting
 	show_sound = select_click
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
 	#培养1个
 	option = {
 		name = mt_leader_event.0.a
@@ -19,7 +16,6 @@ country_event = {
 				id = mt_leader_event.1
 			}
 		}
-
 	}
 	#培养2个
 	option = {
@@ -120,9 +116,6 @@ country_event = {
 	picture = GFX_evt_board_meeting
 	show_sound = select_click
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
 	#等级3
 	option = {
 		name = mt_leader_event.1.a
@@ -282,9 +275,6 @@ country_event = {
 	picture = GFX_evt_board_meeting
 	show_sound = select_click
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
 	#总督
 	option = {
 		name = mt_leader_event.2.a
@@ -336,9 +326,6 @@ country_event = {
 	picture = GFX_evt_board_meeting
 	show_sound = select_click
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
 	#总督
 	option = {
 		name = mt_leader_event.2.a
@@ -390,9 +377,6 @@ country_event = {
 	picture = GFX_evt_board_meeting
 	show_sound = select_click
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
 	#总督
 	option = {
 		name = mt_leader_event.2.a
@@ -444,9 +428,6 @@ country_event = {
 	picture = GFX_evt_board_meeting
 	show_sound = select_click
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
 	#总督
 	option = {
 		name = mt_leader_event.2.a
@@ -519,9 +500,6 @@ country_event = {
 	picture = GFX_evt_board_meeting
 	show_sound = select_click
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
 	#总督
 	option = {
 		name = mt_leader_event.2.a
@@ -597,9 +575,6 @@ country_event = {
 	picture = GFX_evt_board_meeting
 	show_sound = select_click
 	is_triggered_only = yes
-	trigger = {
-		is_ai = no
-	}
 	#总督
 	option = {
 		name = mt_leader_event.2.a

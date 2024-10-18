@@ -7,52 +7,6 @@ tr_mt_transform_adopt = {
 tr_mt_transform_finish = {
 	on_enabled = {
 		add_research_option = tech_synthetic_workers
-		if = {
-			limit = {
-				has_machine_age_dlc = yes
-				NOT = { has_origin = origin_cybernetic_creed }
-			}
-			hidden_effect = {
-				country_event = { id = cyber.1 }
-			}
-		}
-		else_if = {
-			limit = {
-				has_machine_age_dlc = yes
-				has_origin = origin_cybernetic_creed
-			}
-			hidden_effect = {
-				country_event = { id = machine_age.100 }
-			}
-		}
-		else = {
-			hidden_effect = {
-				country_event = { id = utopia.2500 }
-			}
-		}
-		if = {
-			limit = {
-				has_machine_age_dlc = yes
-				NOT = { has_origin = origin_synthetic_fertility }
-			}
-			hidden_effect = {
-				country_event = { id = synth.1 }
-			}
-		}
-		else_if = {
-			limit = {
-				has_machine_age_dlc = yes
-				has_origin = origin_synthetic_fertility
-			}
-			hidden_effect = {
-				country_event = { id = machine_age.3125 }
-			}
-		}
-		else = {
-			hidden_effect = {
-				country_event = { id = utopia.2550 }
-			}
-		}
 	}
 	modifier = {
 		MACHINE_species_trait_points_add = 2

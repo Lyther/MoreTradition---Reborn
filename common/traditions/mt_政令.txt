@@ -2,23 +2,25 @@ tr_mt_writ_adopt = {
 	#法令经费+50
 	modifier = {
 		country_edict_fund_add = 50
+		council_agenda_progress_speed = 0.25
 	}
 }
 
 tr_mt_writ_finish = {
-	#人口带来的帝国规模-15%
+	#议程持续时间+50%
 	custom_tooltip_with_modifiers  = tr_mt_writ_finish_desc
 	modifier = {
-		empire_size_pops_mult = -0.15
+		council_agenda_finishing_effect_duration_mult = 0.5
+		council_agenda_progress_speed = 0.75
 		ascension_perks_add = 1
 	}
 }
 
 tr_mt_writ_1 = {
-	#人口帝国规模-5%
+	#人口帝国规模-15%
 
 	modifier = {
-		empire_size_pops_mult = -0.05
+		empire_size_pops_mult = -0.15
 	}
 
 	ai_weight = {

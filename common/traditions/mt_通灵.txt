@@ -1,10 +1,5 @@
 tr_mt_psychic_adopt = {
 	#每月生产凝聚力+5%
-	on_enabled = {
-		hidden_effect = {
-			country_event = { id = utopia.2600 }
-		}
-	}
 	modifier = {
 		country_unity_produces_mult = 0.05
 	}
@@ -13,9 +8,6 @@ tr_mt_psychic_adopt = {
 tr_mt_psychic_finish = {
 	on_enabled = {
 		add_research_option = tech_psionic_theory
-		hidden_effect = {
-			country_event = { id = utopia.2650 }
-		}
 	}
 	modifier = {
 		ascension_perks_add = 1

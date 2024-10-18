@@ -44,7 +44,8 @@ tr_mt_agricultural_3 = {
 	#超凡脱俗
 	#农夫凝聚力+0.5
 	modifier = {
-		planet_farmers_unity_produces_add = 0.5
+		planet_farmers_unity_produces_add = 3
+		planet_farmers_influence_produces_add = 0.2
 	}
 
 	ai_weight = {
@@ -77,7 +78,7 @@ tr_mt_agricultural_5 = {
 
 	modifier = {
 		planet_farmers_society_research_produces_add = 2
-		planet_farmers_volatile_motes_produces_add = 0.2
+		planet_farmers_food_produces_add = 6
 	}
 
 	ai_weight = {
