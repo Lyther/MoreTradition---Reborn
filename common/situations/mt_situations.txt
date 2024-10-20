@@ -402,6 +402,16 @@ situation_mt_smallarms = {
 		}
 		modifier = {
 			mult = 0
+			desc = "situation_mt_smallarms_battleships_needed_desc"
+			AND = {
+				situation_progress >= 800
+				owner = {
+					NOT = { has_technology = tech_battleships }
+				}
+			}
+		}
+		modifier = {
+			mult = 0
 			desc = "situation_mt_smallarms_pause_desc"
 			has_situation_flag = situation_mt_smallarms_pause
 		}

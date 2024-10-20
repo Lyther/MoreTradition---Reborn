@@ -33,7 +33,7 @@ artifact_mt_appreciation = {
 		hidden_effect = {
 			add_modifier = {
 				modifier = "modifiers_mt_appreciation_cooldown"
-				days = 3600
+				days = 720
 			}
 		}
 	}
@@ -69,14 +69,14 @@ artifact_mt_exhibition = {
 		custom_tooltip = artifact_mt_exhibition_effect
 		add_monthly_resource_mult = {
 			resource = influence
-			value = @tier5influencereward
-			min = @tier5influencemin
-			max = @tier5influencemax
+			value = @tier4influencereward
+			min = @tier4influencemin
+			max = @tier4influencemax
 		}
 		hidden_effect = {
 			add_modifier = {
 				modifier = "modifiers_mt_exhibition_cooldown"
-				days = 3600
+				days = 1080
 			}
 		}
 	}
@@ -106,11 +106,14 @@ artifact_mt_experience = {
 	}
 
 	effect = {
+		add_resource = {
+			influence = 1000
+		}
 		add_monthly_resource_mult = {
 			resource = unity
-			value = @tier2unityreward
-			min = @tier2unitymin
-			max = @tier2unitymax
+			value = @tier5unityreward
+			min = @tier5unitymin
+			max = @tier5unitymax
 		}
 		custom_tooltip = artifact_mt_experience_effect
 		hidden_effect = {

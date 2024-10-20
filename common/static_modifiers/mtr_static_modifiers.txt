@@ -1,25 +1,29 @@
-agenda_perfect_planet = {
+agenda_perfect_planet_finish = {
 	planet_decision_enact_speed_mult = 1.00
 	terraform_speed_mult = 0.40
 }
 
-agenda_promising_leaders = {
+agenda_promising_leaders_finish = {
 	councilor_exp_gain = 0.60
 }
 
-agenda_penetration_improvement = {
+agenda_penetration_improvement_finish = {
 	ship_armor_penetration_mult = 0.40
 	ship_shield_penetration_mult = 0.40
 }
 
-agenda_total_wars = {
+agenda_total_wars_finish = {
 	ship_weapon_damage = 0.50
 	ship_weapon_range_mult = 0.25
 	ship_fire_rate_mult = 0.33
 }
 
-agenda_insane_technologies = {
+agenda_insane_technologies_finish = {
 	planet_researchers_physics_research_produces_add = 4.00
 	planet_researchers_society_research_produces_add = 4.00
 	planet_researchers_engineering_research_produces_add = 4.00
+}
+
+modifiers_mtr_cosmogenesis_purge_mod = {
+	pop_purge_speed = -5
 }

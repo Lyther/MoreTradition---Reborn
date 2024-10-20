@@ -13,7 +13,7 @@ agenda_perfect_planet = {
 		planet_decision_enact_speed_mult = 0.25
 		terraform_speed_mult = 0.10
 	}
-	finish_modifier = agenda_perfect_planet
+	finish_modifier = agenda_perfect_planet_finish
 }
 
 agenda_promising_leaders = {
@@ -27,7 +27,7 @@ agenda_promising_leaders = {
 	modifier = {
 		councilor_exp_gain = 0.15
 	}
-	finish_modifier = agenda_promising_leaders
+	finish_modifier = agenda_promising_leaders_finish
 	effect = {
 		unlock_council_slots = 1
 	}
@@ -45,7 +45,7 @@ agenda_penetration_improvement = {
 		ship_armor_penetration_mult = 0.10
 		ship_shield_penetration_mult = 0.10
 	}
-	finish_modifier = agenda_penetration_improvement
+	finish_modifier = agenda_penetration_improvement_finish
 }
 
 agenda_total_wars = {
@@ -61,7 +61,7 @@ agenda_total_wars = {
 		ship_weapon_range_mult = 0.10
 		ship_fire_rate_mult = 0.05
 	}
-	finish_modifier = agenda_total_wars
+	finish_modifier = agenda_total_wars_finish
 }
 
 agenda_insane_technologies = {
@@ -77,5 +77,5 @@ agenda_insane_technologies = {
 		planet_researchers_society_research_produces_add = 1.00
 		planet_researchers_engineering_research_produces_add = 1.00
 	}
-	finish_modifier = agenda_insane_technologies
+	finish_modifier = agenda_insane_technologies_finish
 }

@@ -30,6 +30,7 @@ decision_mt_heart = {
 		weight = 100
 	}
 }
+
 #齐心传统：移除同心协力
 decision_mt_rm_heart = {
 	owned_planets_only = yes
@@ -54,6 +55,62 @@ decision_mt_rm_heart = {
 		}
 	}
 	ai_weight = {
+		weight = 0
+	}
+}
+
+#突触凝练机：净化人口修正
+decision_mtr_cosmogenesis_purge_mod = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		is_planet_class = pc_cosmogenesis_world
+		NOT = {
+			has_modifier = modifiers_mtr_cosmogenesis_purge_mod
+		}
+		owner = {
+			has_ascension_perk = ap_mtr_crisis
+		}
+	}
+	effect = {
+		add_modifier = {
+			modifier = modifiers_mtr_cosmogenesis_purge_mod
+			days = -1
+		}
+	}
+	ai_weight = {
 		weight = 100
+	}
+}
+
+#突触凝练机：移除净化人口修正
+decision_mtr_rm_cosmogenesis_purge_mod = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+	potential = {
+		has_modifier = modifiers_mtr_cosmogenesis_purge_mod
+		owner = {
+			has_ascension_perk = ap_mtr_crisis
+		}
+	}
+	effect = {
+		remove_modifier = modifiers_mtr_cosmogenesis_purge_mod
+	}
+	ai_weight = {
+		weight = 0
 	}
 }

@@ -1,0 +1,686 @@
+namespace = mt_leader_event
+#特殊培养-选择领袖数量
+country_event = {
+	id = mt_leader_event.0
+	title = mt_leader_event.0.name
+	desc = mt_leader_event.0.desc
+	picture = GFX_evt_board_meeting
+	show_sound = select_click
+	is_triggered_only = yes
+	#培养1个
+	option = {
+		name = mt_leader_event.0.a
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 1 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养2个
+	option = {
+		name = mt_leader_event.0.b
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 2 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养3个
+	option = {
+		name = mt_leader_event.0.c
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 3 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养4个
+	option = {
+		name = mt_leader_event.0.d
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 4 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养5个
+	option = {
+		name = mt_leader_event.0.e
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 5 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养10个
+	option = {
+		name = mt_leader_event.0.f
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 10 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养20个
+	option = {
+		name = mt_leader_event.0.g
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 20 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养30个
+	option = {
+		name = mt_leader_event.0.h
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 30 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养40个
+	option = {
+		name = mt_leader_event.0.i
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 40 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+	#培养50个
+	option = {
+		name = mt_leader_event.0.j
+		hidden_effect = {
+			set_variable = { which = leader_amount value = 50 }
+			country_event = {
+				id = mt_leader_event.1
+			}
+		}
+	}
+}
+#特殊培养-选择领袖类型
+country_event = {
+	id = mt_leader_event.1
+	title = mt_leader_event.1.name
+	desc = mt_leader_event.1.desc
+	picture = GFX_evt_board_meeting
+	show_sound = select_click
+	is_triggered_only = yes
+	#等级3
+	option = {
+		name = mt_leader_event.1.a
+		#检查条件并消耗
+		allow = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 10
+				multiplier = leader_amount
+			}
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 500
+				multiplier = leader_amount
+			}
+		}
+		add_resource = {
+			influence = -10
+			energy = -500
+			multiplier = leader_amount
+		}
+		country_event = {
+			id = mt_leader_event.2
+		}
+	}
+	#等级5
+	option = {
+		name = mt_leader_event.1.b
+		#检查条件并消耗
+		allow = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 20
+				multiplier = leader_amount
+			}
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 1000
+				multiplier = leader_amount
+			}
+		}
+		add_resource = {
+			influence = -20
+			energy = -1000
+			multiplier = leader_amount
+		}
+		country_event = {
+			id = mt_leader_event.3
+		}
+	}
+	#等级10
+	option = {
+		name = mt_leader_event.1.c
+		#检查条件并消耗
+		allow = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 40
+				multiplier = leader_amount
+			}
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 1500
+				multiplier = leader_amount
+			}
+		}
+		add_resource = {
+			influence = -40
+			energy = -1500
+			multiplier = leader_amount
+		}
+		country_event = {
+			id = mt_leader_event.4
+		}
+	}
+	#前途无量的天才
+	option = {
+		name = mt_leader_event.1.d
+		#检查条件并消耗
+		allow = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 100
+				multiplier = leader_amount
+			}
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 10000
+				multiplier = leader_amount
+			}
+		}
+		add_resource = {
+			influence = -100
+			energy = -10000
+			multiplier = leader_amount
+		}
+		country_event = {
+			id = mt_leader_event.5
+		}
+	}
+	#传奇领袖
+	option = {
+		name = mt_leader_event.1.e
+		#检查条件并消耗
+		allow = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 200
+				multiplier = leader_amount
+			}
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 20000
+				multiplier = leader_amount
+			}
+		}
+		add_resource = {
+			influence = -200
+			energy = -20000
+			multiplier = leader_amount
+		}
+		country_event = {
+			id = mt_leader_event.6
+		}
+	}
+	#大放异彩的传奇天才
+	option = {
+		name = mt_leader_event.1.f
+		#检查条件并消耗
+		allow = {
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 1000
+				multiplier = leader_amount
+			}
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 100000
+				multiplier = leader_amount
+			}
+		}
+		add_resource = {
+			influence = -1000
+			energy = -100000
+			multiplier = leader_amount
+		}
+		country_event = {
+			id = mt_leader_event.7
+		}
+	}
+}
+#特殊培养-等级3
+country_event = {
+	id = mt_leader_event.2
+	title = mt_leader_event.2.name
+	desc = mt_leader_event.2.desc
+	picture = GFX_evt_board_meeting
+	show_sound = select_click
+	is_triggered_only = yes
+	#总督
+	option = {
+		name = mt_leader_event.2.a
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+				skill = 3
+			}
+		}
+	}
+	#科研人员
+	option = {
+		name = mt_leader_event.2.b
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				name = random
+				skill = 3
+			}
+		}
+	}
+	#舰队司令
+	option = {
+		name = mt_leader_event.2.c
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = commander
+				species = owner_main_species
+				name = random
+				skill = 3
+			}
+		}
+	}
+}
+#特殊培养-等级5
+country_event = {
+	id = mt_leader_event.3
+	title = mt_leader_event.2.name
+	desc = mt_leader_event.2.desc
+	picture = GFX_evt_board_meeting
+	show_sound = select_click
+	is_triggered_only = yes
+	#总督
+	option = {
+		name = mt_leader_event.2.a
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+				skill = 5
+			}
+		}
+	}
+	#科研人员
+	option = {
+		name = mt_leader_event.2.b
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				name = random
+				skill = 5
+			}
+		}
+	}
+	#舰队司令
+	option = {
+		name = mt_leader_event.2.c
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = commander
+				species = owner_main_species
+				name = random
+				skill = 5
+			}
+		}
+	}
+}
+#特殊培养-等级10
+country_event = {
+	id = mt_leader_event.4
+	title = mt_leader_event.2.name
+	desc = mt_leader_event.2.desc
+	picture = GFX_evt_board_meeting
+	show_sound = select_click
+	is_triggered_only = yes
+	#总督
+	option = {
+		name = mt_leader_event.2.a
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+				skill = 10
+			}
+		}
+	}
+	#科研人员
+	option = {
+		name = mt_leader_event.2.b
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				name = random
+				skill = 10
+			}
+		}
+	}
+	#舰队司令
+	option = {
+		name = mt_leader_event.2.c
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = commander
+				species = owner_main_species
+				name = random
+				skill = 10
+			}
+		}
+	}
+}
+#特殊培养-前途无量的天才
+country_event = {
+	id = mt_leader_event.5
+	title = mt_leader_event.2.name
+	desc = mt_leader_event.2.desc
+	picture = GFX_evt_board_meeting
+	show_sound = select_click
+	is_triggered_only = yes
+	#总督
+	option = {
+		name = mt_leader_event.2.a
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+				skill = 1
+				traits = {
+					trait = leader_trait_promising_genius_councilor_official
+					trait = leader_trait_promising_genius_official
+				}
+				effect = {
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+	#科研人员
+	option = {
+		name = mt_leader_event.2.b
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				name = random
+				skill = 1
+				traits = {
+					trait = leader_trait_promising_genius_councilor_scientist
+					trait = leader_trait_promising_genius_scientist
+				}
+				effect = {
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+	#舰队司令
+	option = {
+		name = mt_leader_event.2.c
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = commander
+				species = owner_main_species
+				name = random
+				skill = 1
+				traits = {
+					trait = leader_trait_promising_genius_councilor_commander
+					trait = leader_trait_promising_genius_commander
+				}
+				effect = {
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+}
+#特殊培养-传奇领袖
+country_event = {
+	id = mt_leader_event.6
+	title = mt_leader_event.2.name
+	desc = mt_leader_event.2.desc
+	picture = GFX_evt_board_meeting
+	show_sound = select_click
+	is_triggered_only = yes
+	#总督
+	option = {
+		name = mt_leader_event.2.a
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+				skill = 8
+				traits = {
+					trait = leader_trait_legendary_leader_councilor_official
+					trait = leader_trait_legendary_leader_official
+				}
+				effect = {
+					set_leader_flag = legendary_leader
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+	#科研人员
+	option = {
+		name = mt_leader_event.2.b
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				name = random
+				skill = 8
+				traits = {
+					trait = leader_trait_legendary_leader_councilor_scientist
+					trait = leader_trait_legendary_leader_scientist
+				}
+				effect = {
+					set_leader_flag = legendary_leader
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+	#舰队司令
+	option = {
+		name = mt_leader_event.2.c
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = commander
+				species = owner_main_species
+				name = random
+				skill = 8
+				traits = {
+					trait = leader_trait_legendary_scientific_diplomacy
+					trait = leader_trait_legendary_great_inventor
+				}
+				effect = {
+					set_leader_flag = legendary_leader
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+}
+#特殊培养-大放异彩的传奇天才
+country_event = {
+	id = mt_leader_event.7
+	title = mt_leader_event.2.name
+	desc = mt_leader_event.2.desc
+	picture = GFX_evt_board_meeting
+	show_sound = select_click
+	is_triggered_only = yes
+	#总督
+	option = {
+		name = mt_leader_event.2.a
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+				skill = 10
+				traits = {
+					trait = leader_trait_legendary_genius_councilor_official
+					trait = leader_trait_legendary_genius_official
+				}
+				effect = {
+					set_leader_flag = legendary_leader
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+	#科研人员
+	option = {
+		name = mt_leader_event.2.b
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				name = random
+				skill = 10
+				traits = {
+					trait = leader_trait_legendary_genius_councilor_scientist
+					trait = leader_trait_legendary_genius_scientist
+				}
+				effect = {
+					set_leader_flag = legendary_leader
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+	#舰队司令
+	option = {
+		name = mt_leader_event.2.c
+		#创建具体的领袖
+		while = {
+			count = leader_amount
+			create_leader = {
+				class = commander
+				species = owner_main_species
+				name = random
+				skill = 10
+				traits = {
+					trait = leader_trait_legendary_genius_councilor_commander
+					trait = leader_trait_legendary_genius_commander
+				}
+				effect = {
+					set_leader_flag = legendary_leader
+					set_leader_flag = immune_to_negative_traits
+				}
+			}
+		}
+	}
+}
+
+#培养传统：满级给特质
+country_event = {
+	id = mt_leader_event.8
+	hide_window = yes
+ 	is_triggered_only = yes
+	trigger = {
+		has_active_tradition = tr_mt_develop_1
+		from = {
+			has_skill = 10
+			not = {
+				has_trait = leader_trait_mt_develop_scientist
+				has_trait = leader_trait_mt_develop_commander
+				has_trait = leader_trait_mt_develop_official
+			}
+		}
+	}
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_trait_mt_develop_scientist
+			}
+			if = {
+				limit = {
+					leader_class = commander
+				}
+				add_trait = leader_trait_mt_develop_commander
+			}
+			if = {
+				limit = {
+					leader_class = official
+				}
+				add_trait = leader_trait_mt_develop_official
+			}
+
+		}
+	}
+
+}

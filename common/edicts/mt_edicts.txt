@@ -65,7 +65,7 @@ mt_majestic = {
 }
 #更多传统：控制中枢
 mtr_general_panel = {
-	length = 1
+	length = -1
 	icon = "GFX_edict_type_policy"
 
 	potential = {
@@ -73,6 +73,12 @@ mtr_general_panel = {
 	}
 
 	effect = {
+		country_event = {
+			id = mtr_general_event.0
+		}
+	}
+
+	on_disabled = {
 		country_event = {
 			id = mtr_general_event.0
 		}

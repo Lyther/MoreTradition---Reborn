@@ -1,12 +1,17 @@
-mt_crisis_path = {
+mtr_crisis_path = {
 	crisis_currency = "crisis_energy"
 
 	levels = {
-		mt_crisis_level_1
-		mt_crisis_level_2
-		mt_crisis_level_3
-		mt_crisis_level_4
-		mt_crisis_level_5
+		crisis_level_1
+		crisis_cosmogenesis_level_1
+		crisis_level_2
+		crisis_cosmogenesis_level_2
+		crisis_level_3
+		crisis_level_4
+		crisis_cosmogenesis_level_3
+		crisis_level_5
+		crisis_cosmogenesis_level_4
+		crisis_cosmogenesis_level_5
 	}
 
 	objectives = {

@@ -6,8 +6,8 @@ spriteTypes = {
 	}
 	#飞升
 	spriteType = {
-		name = "GFX_ap_mt_crisis"
-		texturefile = "gfx/interface/icons/ascension_perks/ap_mt_crisis.dds"
+		name = "GFX_ap_mtr_crisis"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_mtr_crisis.dds"
 		alwaystransparent = yes
 	}
 }

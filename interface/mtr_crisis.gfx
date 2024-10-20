@@ -1,59 +1,59 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_mt_crisis_level_1_btn"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl1_btn.dds"
+		name = "GFX_mtr_crisis_level_1_btn"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl1_btn.dds"
 		noOfFrames = 2			
 	}
 	spriteType = {
-		name = "GFX_mt_crisis_level_2_btn"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl2_btn.dds"
+		name = "GFX_mtr_crisis_level_2_btn"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl2_btn.dds"
 		noOfFrames = 2			
 	}
 	spriteType = {
-		name = "GFX_mt_crisis_level_3_btn"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl3_btn.dds"
+		name = "GFX_mtr_crisis_level_3_btn"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl3_btn.dds"
 		noOfFrames = 2			
 	}
 	spriteType = {
-		name = "GFX_mt_crisis_level_4_btn"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl4_btn.dds"
+		name = "GFX_mtr_crisis_level_4_btn"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl4_btn.dds"
 		noOfFrames = 2			
 	}
 	spriteType = {
-		name = "GFX_mt_crisis_level_5_btn"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl5_btn.dds"
+		name = "GFX_mtr_crisis_level_5_btn"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl5_btn.dds"
 		noOfFrames = 2			
 	}
 	spriteType = {
-		name = "GFX_mt_crisis_level_1_btn_small"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl1_btn_small.dds"
+		name = "GFX_mtr_crisis_level_1_btn_small"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl1_btn_small.dds"
 		noOfFrames = 2			
 	}
 	spriteType = {
-		name = "GFX_mt_crisis_level_2_btn_small"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl2_btn_small.dds"
+		name = "GFX_mtr_crisis_level_2_btn_small"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl2_btn_small.dds"
 		noOfFrames = 2			
 	}
 	 spriteType = {
-		name = "GFX_mt_crisis_level_3_btn_small"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_lvl3_btn_small.dds"
+		name = "GFX_mtr_crisis_level_3_btn_small"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_lvl3_btn_small.dds"
 		noOfFrames = 2	
 	}		
 	spriteType = {
-		name = "GFX_mt_crisis_level_4_btn_small"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl4_btn_small.dds"
+		name = "GFX_mtr_crisis_level_4_btn_small"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl4_btn_small.dds"
 		noOfFrames = 2			
 	}
 	spriteType = {
-		name = "GFX_mt_crisis_level_5_btn_small"
-		texturefile = "gfx/interface/icons/crisis/MT_Crisis_Lvl5_btn_small.dds"
+		name = "GFX_mtr_crisis_level_5_btn_small"
+		texturefile = "gfx/interface/icons/crisis/MTR_Crisis_Lvl5_btn_small.dds"
 		noOfFrames = 2			
 	}
 	progressbarType = {
-		name = "GFX_mt_crisis_path_progressbar"
+		name = "GFX_mtr_crisis_path_progressbar"
 		color = { 1.0 1.0 1.0 }
 		colorTwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/crisis/MT_Crisis_progress_bar.dds"
+		textureFile1 = "gfx/interface/crisis/MTR_Crisis_progress_bar.dds"
 		textureFile2 = "gfx/interface/crisis/Crisis_progressBar_BG.dds"
 		size = { x = 10 y = 432 }
 		effectFile = "gfx/FX/progress.shader"

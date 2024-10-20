@@ -621,9 +621,9 @@ situation_event = {
 			}
 			else = {
 				add_research_option = tech_titans
-				add_research_option = tech_mt_x_smallarc
-				add_research_option = tech_mt_t_smallarc
 			}
+			add_research_option = tech_mt_x_smallarc
+			add_research_option = tech_mt_t_smallarc
 		}
 	}
 

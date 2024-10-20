@@ -19,9 +19,12 @@ ap_become_the_crisis = {
 			fail_text = "requires_independence"
 			is_subject = no
 		}
-		custom_tooltip = {
-			success_text = "mt_crisis_ascension_perk_success"
-			is_ai = no
+	}
+
+	on_enabled = {
+		custom_tooltip = "required_for_mtr_crisis_ascension_perk"
+		hidden_effect = {
+			set_ai_personality = became_the_crisis
 		}
 	}
 
@@ -88,9 +91,15 @@ ap_cosmogenesis = {
 			fail_text = "requires_independence"
 			is_subject = no
 		}
-		custom_tooltip = {
-			success_text = "mt_crisis_ascension_perk_success"
-			is_ai = no
+	}
+
+	on_enabled = {
+		custom_tooltip = "required_for_mtr_crisis_ascension_perk"
+		hidden_effect = {
+			set_variable = {
+				which = cosmogenesis_world_advanced_logic_produced
+				value = 0
+			}
 		}
 	}
 
@@ -136,53 +145,5 @@ ap_cosmogenesis = {
 			factor = 2
 			galaxy_percentage > 0.2
 		}
-	}
-}
-
-#################
-# MT CRISIS ASCENSION PERKS
-#################
-
-ap_mt_crisis = {
-	potential = {
-		has_nemesis = yes
-		has_machine_age_dlc = yes
-		NOT = {
-			has_ascension_perk = ap_mt_crisis
-		}
-		has_ascension_perk = ap_become_the_crisis
-		has_ascension_perk = ap_cosmogenesis
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_3"
-			num_ascension_perks > 2
-		}
-		custom_tooltip = {
-			fail_text = "requires_independence"
-			is_subject = no
-		}
-		custom_tooltip = {
-			success_text = "mt_crisis_ascension_perk_success"
-			is_ai = no
-			has_ascension_perk = ap_become_the_crisis
-			has_ascension_perk = ap_cosmogenesis
-		}
-	}
-
-	on_enabled = {
-		hidden_effect = {
-			set_ai_personality = became_the_crisis
-			set_variable = {
-				which = cosmogenesis_world_advanced_logic_produced
-				value = 0
-			}
-		}
-		activate_crisis_progression = mt_crisis_path
-	}
-
-	ai_weight = {
-		factor = 0
 	}
 }
