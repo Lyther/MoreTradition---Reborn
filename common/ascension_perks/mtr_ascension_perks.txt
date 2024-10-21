@@ -22,12 +22,11 @@ ap_mtr_crisis = {
 		}
 		custom_tooltip = {
 			fail_text = "mtr_crisis_ascension_perk_desc"
+			has_ascension_perk = ap_become_the_crisis
+			has_ascension_perk = ap_cosmogenesis
 			is_ai = no
-			AND = {
-				has_ascension_perk = ap_become_the_crisis
-				has_ascension_perk = ap_cosmogenesis
-			}
 		}
+		has_tradition = tr_mtr_crisis_adopt
 	}
 
 	on_enabled = {

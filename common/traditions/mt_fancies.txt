@@ -7,88 +7,67 @@ tr_mt_fancies_adopt = {
 
 tr_mt_fancies_finish = {
 	modifier = {
-		megastructure_build_speed_mult = 1.5
+		megastructures_time_cost_mult = -0.5
 		ascension_perks_add = 1
 	}
 }
 
 tr_mt_fancies_1 = {
-	#疯狂设计
-	#巨构影响力成本-25%，凝聚力成本-25%
-
 	modifier = {
-		megastructures_influence_cost_mult = -0.25
-		megastructures_unity_cost_mult = -0.25
+		country_megastructure_build_cap_add = 5
 	}
-
 	ai_weight = {
 		factor = 10000
 	}
 }
 
 tr_mt_fancies_2 = {
-	#稀有合金
-	#巨构合金成本-10%
 	possible = {
 		has_tradition = tr_mt_fancies_1
 	}
-
 	modifier = {
-		megastructures_alloys_cost_mult = -0.1
+		megastructures_cost_mult = -0.25
 	}
-
 	ai_weight = {
 		factor = 1000
 	}
 }
 
 tr_mt_fancies_3 = {
-	#审查制度
-	#巨构产出+25%
-
 	possible = {
 		has_tradition = tr_mt_fancies_1
 	}
 	modifier = {
 		megastructures_produces_mult = 0.25
 	}
-
 	ai_weight = {
 		factor = 5000
 	}
 }
 
 tr_mt_fancies_4 = {
-	#模块建设
-	#巨构建造速度+50%，巨构凝聚力成本-25%
 	possible = {
 		has_tradition = tr_mt_fancies_1
 	}
-
 	modifier = {
-		megastructure_build_speed_mult = 0.5
-		megastructures_unity_cost_mult = -0.25
+		megastructure_dismantle_refund_mult = 0.5
 	}
-
 	ai_weight = {
 		factor = 5000
 	}
 }
 
 tr_mt_fancies_5 = {
-	#全民热潮
-	#巨构影响力成本-50%，凝聚力成本-25%
 	possible = {
 		has_tradition = tr_mt_fancies_2
 		has_tradition = tr_mt_fancies_3
 		has_tradition = tr_mt_fancies_4
 	}
-
 	modifier = {
-		megastructures_influence_cost_mult = -0.5
-		megastructures_unity_cost_mult = -0.25
+		megastructures_cost_mult = -0.25
+		megastructures_produces_mult = 0.25
+		megastructures_upkeep_mult = -0.75
 	}
-
 	ai_weight = {
 		factor = 5000
 	}

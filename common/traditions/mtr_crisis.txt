@@ -1,0 +1,99 @@
+tr_mtr_crisis_adopt = {
+	possible = {
+		has_tradition = tr_mt_starwar_finish
+	}
+	custom_tooltip_with_modifiers = tr_mtr_crisis_adopt_desc
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+tr_mtr_crisis_finish = {
+	custom_tooltip_with_modifiers = tr_mtr_crisis_finish_desc
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+tr_mtr_crisis_1 = {
+	possible = {
+		has_crisis_level = crisis_level_1
+		has_crisis_level = crisis_cosmogenesis_level_1
+	}
+	custom_tooltip_with_modifiers = tr_mtr_crisis_1_desc
+	modifier = {
+		country_minerals_produces_mult = 0.25
+		country_alloys_produces_mult = 0.25
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tr_mtr_crisis_2 = {
+	possible = {
+		has_tradition = tr_mtr_crisis_1
+		has_crisis_level = crisis_level_2
+		has_crisis_level = crisis_cosmogenesis_level_2
+	}
+	custom_tooltip_with_modifiers = tr_mtr_crisis_2_desc
+	modifier = {
+		shipclass_military_station_armor_hardening_add = 1
+		shipclass_military_station_shield_hardening_add = 1
+		shipclass_starbase_armor_hardening_add = 1
+		shipclass_starbase_shield_hardening_add = 1
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tr_mtr_crisis_3 = {
+	possible = {
+		has_tradition = tr_mtr_crisis_1
+		has_crisis_level = crisis_level_3
+		has_crisis_level = crisis_cosmogenesis_level_3
+	}
+	custom_tooltip_with_modifiers = tr_mtr_crisis_3_desc
+	modifier = {
+		ship_jumpdrive_cooldown_mult = -0.5
+		ship_ftl_jumpdrive_range_mult = 0.5
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tr_mtr_crisis_4 = {
+	possible = {
+		has_tradition = tr_mtr_crisis_1
+		has_crisis_level = crisis_level_4
+		has_crisis_level = crisis_cosmogenesis_level_4
+	}
+	custom_tooltip_with_modifiers = tr_mtr_crisis_4_desc
+	modifier = {
+		starbase_shipyard_build_time_mult = -0.5
+		planet_army_build_time_mult = -0.5
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tr_mtr_crisis_5 = {
+	possible = {
+		has_tradition = tr_mtr_crisis_2
+		has_tradition = tr_mtr_crisis_3
+		has_tradition = tr_mtr_crisis_4
+		has_crisis_level = crisis_level_5
+		has_crisis_level = crisis_cosmogenesis_level_5
+	}
+	custom_tooltip_with_modifiers = tr_mtr_crisis_5_desc
+	modifier = {
+		ship_components_cost_mult = -1
+		ship_sections_cost_mult = -1
+	}
+	ai_weight = {
+		factor = 0
+	}
+}

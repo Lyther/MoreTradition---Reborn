@@ -74,6 +74,53 @@ country_event = {
 		}
 	}
 	option = {
+		name = "enable_mtr_cosmogenesis_purge_mod"
+		trigger = {
+			has_ascension_perk = ap_mtr_crisis
+			NOT = { has_country_flag = enabled_mtr_cosmogenesis_purge_mod }
+		}
+		hidden_effect = {
+			custom_tooltip = "enable_mtr_cosmogenesis_purge_mod_desc"
+			every_controlled_planet = {
+				limit = {
+					is_planet_class = pc_cosmogenesis_world
+					NOT = {
+						has_modifier = modifiers_mtr_cosmogenesis_purge_mod
+					}
+				}
+				add_modifier = {
+					modifier = modifiers_mtr_cosmogenesis_purge_mod
+					days = -1
+				}
+			}
+			set_country_flag = enabled_mtr_cosmogenesis_purge_mod
+			country_event = {
+				id = mt_leader_event.0
+			}
+		}
+	}
+	option = {
+		name = "disable_mtr_cosmogenesis_purge_mod"
+		trigger = {
+			has_ascension_perk = ap_mtr_crisis
+			has_country_flag = enabled_mtr_cosmogenesis_purge_mod
+		}
+		hidden_effect = {
+			custom_tooltip = "disable_mtr_cosmogenesis_purge_mod_desc"
+			every_controlled_planet = {
+				limit = {
+					is_planet_class = pc_cosmogenesis_world
+					has_modifier = modifiers_mtr_cosmogenesis_purge_mod
+				}
+				remove_modifier = modifiers_mtr_cosmogenesis_purge_mod
+			}
+			remove_country_flag = enabled_mtr_cosmogenesis_purge_mod
+			country_event = {
+				id = mt_leader_event.0
+			}
+		}
+	}
+	option = {
 		name = "mtr_general_event.0.f"
 	}
 }

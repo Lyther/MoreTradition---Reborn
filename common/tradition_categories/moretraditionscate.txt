@@ -11,10 +11,9 @@ tradition_mt_produce = {
 		"tr_mt_produce_5"
 	}
 	potential = { always = yes }
-
 	ai_weight = { factor = 0 }
-
 }
+
 #聚焦科研
 tradition_mt_research = {
 	tree_template = "tree_21_11"
@@ -29,8 +28,8 @@ tradition_mt_research = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #备战
 tradition_mt_preparewar = {
 	tree_template = "tree_11_111"
@@ -45,8 +44,8 @@ tradition_mt_preparewar = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #开拓
 tradition_mt_reclaim = {
 	tree_template = "tree_11_12"
@@ -61,8 +60,8 @@ tradition_mt_reclaim = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #建筑
 tradition_mt_building = {
 	tree_template = "tree_21_11"
@@ -77,8 +76,8 @@ tradition_mt_building = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #培养
 tradition_mt_develop = {
 	tree_template = "tree_21_11"
@@ -93,8 +92,8 @@ tradition_mt_develop = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #通灵
 tradition_mt_psychic = {
 	tree_template = "tree_21_11"
@@ -109,8 +108,8 @@ tradition_mt_psychic = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #育种
 tradition_mt_breeding = {
 	tree_template = "tree_11_12"
@@ -125,8 +124,8 @@ tradition_mt_breeding = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #改造
 tradition_mt_transform = {
 	tree_template = "tree_21_11"
@@ -141,8 +140,8 @@ tradition_mt_transform = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #齐心
 tradition_mt_heart = {
 	tree_template = "tree_11_12"
@@ -157,8 +156,8 @@ tradition_mt_heart = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #经贸改革
 tradition_mt_trade = {
 	tree_template = "tree_21_11"
@@ -173,8 +172,8 @@ tradition_mt_trade = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #电业
 tradition_mt_electric = {
 	tree_template = "tree_11_111"
@@ -189,8 +188,8 @@ tradition_mt_electric = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #矿业
 tradition_mt_mining = {
 	tree_template = "tree_11_111"
@@ -205,8 +204,8 @@ tradition_mt_mining = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #农业
 tradition_mt_agricultural = {
 	tree_template = "tree_11_111"
@@ -221,8 +220,8 @@ tradition_mt_agricultural = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #文物
 tradition_mt_relic = {
 	tree_template = "tree_21_11"
@@ -237,8 +236,8 @@ tradition_mt_relic = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #狂想
 tradition_mt_fancies = {
 	tree_template = "tree_mt_131"
@@ -253,8 +252,8 @@ tradition_mt_fancies = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #陆军
 tradition_mt_army = {
 	tree_template = "tree_mt_131"
@@ -269,8 +268,8 @@ tradition_mt_army = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #首都
 tradition_mt_capital = {
 	tree_template = "tree_mt_11111"
@@ -285,8 +284,8 @@ tradition_mt_capital = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #舰船
 tradition_mt_battleship = {
 	tree_template = "tree_mt_11111"
@@ -301,8 +300,8 @@ tradition_mt_battleship = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #政令
 tradition_mt_writ = {
 	tree_template = "tree_mt_1_11_11"
@@ -317,8 +316,8 @@ tradition_mt_writ = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #微缩
 tradition_mt_smallarms = {
 	tree_template = "tree_mt_1_11_11"
@@ -333,8 +332,8 @@ tradition_mt_smallarms = {
 	}
 	potential = { always = yes }
 	ai_weight = { factor = 0 }
-
 }
+
 #军国传统
 #要求：军国主义
 tradition_mt_exmilitarism = {
@@ -352,8 +351,8 @@ tradition_mt_exmilitarism = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
+
 #排外传统
 #要求:排外主义
 tradition_mt_exxenophobe = {
@@ -371,8 +370,8 @@ tradition_mt_exxenophobe = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
+
 #平等传统
 #要求：平等主义
 tradition_mt_exegalitarian = {
@@ -390,8 +389,8 @@ tradition_mt_exegalitarian = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
+
 
 #唯物传统
 #要求：唯物主义
@@ -410,7 +409,6 @@ tradition_mt_exmaterialist = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
 
 #和平传统
@@ -430,7 +428,6 @@ tradition_mt_expacifist = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
 
 #亲外传统
@@ -450,7 +447,6 @@ tradition_mt_exxenophile = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
 
 #威权传统
@@ -470,7 +466,6 @@ tradition_mt_exauthoritarian = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
 
 #唯心传统
@@ -490,7 +485,6 @@ tradition_mt_exspiritualist = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
 
 #追求真理
@@ -510,7 +504,6 @@ tradition_mt_seektruth = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
 
 #星战
@@ -530,7 +523,6 @@ tradition_mt_starwar = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
-
 }
 
 #盖亚
@@ -550,5 +542,23 @@ tradition_mt_exgaia = {
 		always = yes
 	}
 	ai_weight = { factor = 0 }
+}
 
+#天灾
+#要求：完成星战传统
+tradition_mtr_crisis = {
+	tree_template = "tree_mt_131"
+	adoption_bonus = "tr_mtr_crisis_adopt"
+	finish_bonus = "tr_mtr_crisis_finish"
+	traditions = {
+		"tr_mtr_crisis_1"
+		"tr_mtr_crisis_2"
+		"tr_mtr_crisis_3"
+		"tr_mtr_crisis_4"
+		"tr_mtr_crisis_5"
+	}
+	potential = { 
+		always = yes
+	}
+	ai_weight = { factor = 0 }
 }

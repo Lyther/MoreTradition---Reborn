@@ -10,4 +10,33 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ascension_perks/ap_mtr_crisis.dds"
 		alwaystransparent = yes
 	}
+	#传统
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_mtr_crisis"
+		textureFile = "gfx/interface/traditions/tradition_category_title_mtr_crisis.dds" 
+	}
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_mtr_crisis"
+		textureFile = "gfx/interface/traditions/tradition_icon_mt_research.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_crisis_1"
+		textureFile = "gfx/interface/traditions/tr_mt_army_3.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_crisis_2"
+		textureFile = "gfx/interface/traditions/tr_mt_breeding_5.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_crisis_3"
+		textureFile = "gfx/interface/traditions/tr_mt_heart_3.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_crisis_4"
+		textureFile = "gfx/interface/traditions/tr_mt_reclaim_3.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_crisis_5"
+		textureFile = "gfx/interface/traditions/tr_mt_starwar_5.dds"
+	}
 }

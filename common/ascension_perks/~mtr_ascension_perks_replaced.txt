@@ -11,20 +11,63 @@ ap_become_the_crisis = {
 	}
 
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
+		if = {
+			limit = {
+				has_tradition = tr_mtr_crisis_adopt
+			}
+			custom_tooltip = {
+				fail_text = "requires_ascension_perks_1"
+				num_ascension_perks > 0
+			}
+			custom_tooltip = {
+				fail_text = "requires_independence"
+				is_subject = no
+			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_independence"
-			is_subject = no
+		else = {
+			custom_tooltip = {
+				fail_text = "requires_ascension_perks_3"
+				num_ascension_perks > 2
+			}
+			custom_tooltip = {
+				fail_text = "requires_independence"
+				is_subject = no
+			}
+			custom_tooltip = {
+				fail_text = "must_not_be_custodian"
+				is_galactic_custodian = no
+			}
+			custom_tooltip = {
+				fail_text = "must_not_be_emperor"
+				is_galactic_emperor = no
+			}
+			NOR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_civic = civic_machine_servitor
+			}
+			NOR = {
+				has_ascension_perk = ap_cosmogenesis
+				has_ascension_perk = ap_defender_of_the_galaxy
+				has_origin = origin_slavers
+			}
 		}
 	}
 
 	on_enabled = {
-		custom_tooltip = "required_for_mtr_crisis_ascension_perk"
-		hidden_effect = {
-			set_ai_personality = became_the_crisis
+		if = {
+			limit = {
+				has_tradition = tr_mtr_crisis_adopt
+			}
+			custom_tooltip = "required_for_mtr_crisis_ascension_perk"
+		}
+		else = {
+			hidden_effect = {
+				set_ai_personality = became_the_crisis
+			}
+			activate_crisis_progression = nemesis_path
 		}
 	}
 
@@ -83,23 +126,63 @@ ap_cosmogenesis = {
 	}
 
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
+		if = {
+			limit = {
+				has_tradition = tr_mtr_crisis_adopt
+			}
+			custom_tooltip = {
+				fail_text = "requires_ascension_perks_1"
+				num_ascension_perks > 0
+			}
+			custom_tooltip = {
+				fail_text = "requires_independence"
+				is_subject = no
+			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_independence"
-			is_subject = no
+		else = {
+			custom_tooltip = {
+				fail_text = "requires_ascension_perks_3"
+				num_ascension_perks > 2
+			}
+			custom_tooltip = {
+				fail_text = "requires_independence"
+				is_subject = no
+			}
+			custom_tooltip = {
+				fail_text = "must_not_be_custodian"
+				is_galactic_custodian = no
+			}
+			custom_tooltip = {
+				fail_text = "must_not_be_emperor"
+				is_galactic_emperor = no
+			}
+			NOR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_civic = civic_machine_servitor
+			}
+			NOR = {
+				has_ascension_perk = ap_become_the_crisis
+				has_ascension_perk = ap_defender_of_the_galaxy
+				has_origin = origin_slavers
+			}
 		}
 	}
 
 	on_enabled = {
-		custom_tooltip = "required_for_mtr_crisis_ascension_perk"
-		hidden_effect = {
-			set_variable = {
-				which = cosmogenesis_world_advanced_logic_produced
-				value = 0
+		if = {
+			limit = {
+				has_tradition = tr_mtr_crisis_adopt
 			}
+		custom_tooltip = "required_for_mtr_crisis_ascension_perk"
+		}
+		else = {
+			hidden_effect = {
+				set_ai_personality = became_the_crisis
+			}
+			activate_crisis_progression = nemesis_path
 		}
 	}
 
