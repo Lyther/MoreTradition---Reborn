@@ -244,7 +244,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "mtr_general_event.1.d"
+		name = BACK
 		hidden_effect = {
 			country_event = {
 				id = mtr_general_event.0
@@ -306,7 +306,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "mtr_general_event.2.e"
+		name = BACK
 		hidden_effect = {
 			country_event = {
 				id = mtr_general_event.0
@@ -352,7 +352,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "mtr_general_event.3.c"
+		name = BACK
 		hidden_effect = {
 			country_event = {
 				id = mtr_general_event.0
@@ -398,7 +398,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "mtr_general_event.4.c"
+		name = BACK
 		hidden_effect = {
 			country_event = {
 				id = mtr_general_event.0

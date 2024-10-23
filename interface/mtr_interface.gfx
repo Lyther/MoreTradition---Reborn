@@ -1,16 +1,16 @@
 spriteTypes = {
-	#武器
+	# Weapon: Brilliant Energy Emitter
 	spriteType = {
 		name = "GFX_ship_mtr_brilliant_energy_emitter"
 		textureFile = "gfx/interface/component/ship_part_brilliant_energy_emitter.dds"
 	}
-	#飞升
+	# Ascension Perk: Crisis
 	spriteType = {
 		name = "GFX_ap_mtr_crisis"
 		texturefile = "gfx/interface/icons/ascension_perks/ap_mtr_crisis.dds"
 		alwaystransparent = yes
 	}
-	#传统
+	# Tradition: Crisis
 	spriteType = {
 		name = "GFX_tradition_category_bg_tradition_mtr_crisis"
 		textureFile = "gfx/interface/traditions/tradition_category_title_mtr_crisis.dds" 
@@ -38,5 +38,34 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_tr_mtr_crisis_5"
 		textureFile = "gfx/interface/traditions/tr_mt_starwar_5.dds"
+	}
+	# Tradition: Assimilate
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_mtr_assimilate"
+		textureFile = "gfx/interface/traditions/tradition_category_title_mtr_assimilate.dds"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_mtr_assimilate"
+		textureFile = "gfx/interface/traditions/tradition_icon_mtr_assimilate.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_assimilate_1"
+		textureFile = "gfx/interface/traditions/tr_mtr_assimilate_1.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_assimilate_2"
+		textureFile = "gfx/interface/traditions/tr_mtr_assimilate_2.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_assimilate_3"
+		textureFile = "gfx/interface/traditions/tr_mtr_assimilate_3.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_assimilate_4"
+		textureFile = "gfx/interface/traditions/tr_mtr_assimilate_4.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_mtr_assimilate_5"
+		textureFile = "gfx/interface/traditions/tr_mtr_assimilate_5.dds"
 	}
 }

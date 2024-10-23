@@ -21,13 +21,6 @@ tech_cosmogenesis_thesis = {
         }
     }
 
-    weight_modifier = {
-        modifier = {
-            factor = 5
-            has_technology = tech_cosmogenesis_crisis_3
-        }
-    }
-
     prereqfor_desc = {
         custom = {
             title = cosmogenesis_thesis_tech_title
