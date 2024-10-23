@@ -95,7 +95,7 @@ country_event = {
 			}
 			set_country_flag = enabled_mtr_cosmogenesis_purge_mod
 			country_event = {
-				id = mt_leader_event.0
+				id = mtr_general_event.0
 			}
 		}
 	}
@@ -116,12 +116,38 @@ country_event = {
 			}
 			remove_country_flag = enabled_mtr_cosmogenesis_purge_mod
 			country_event = {
-				id = mt_leader_event.0
+				id = mtr_general_event.0
 			}
 		}
 	}
 	option = {
-		name = "mtr_general_event.0.f"
+		name = "enable_tech_cosmogenesis_thesis"
+		trigger = {
+			has_crisis_level = crisis_cosmogenesis_level_4
+			NOT = { has_country_flag = disabled_tech_cosmogenesis_thesis }
+		}
+		hidden_effect = {
+			set_country_flag = disabled_tech_cosmogenesis_thesis
+			country_event = {
+				id = mtr_general_event.0
+			}
+		}
+	}
+	option = {
+		name = "disable_tech_cosmogenesis_thesis"
+		trigger = {
+			has_crisis_level = crisis_cosmogenesis_level_4
+			has_country_flag = disabled_tech_cosmogenesis_thesis
+		}
+		hidden_effect = {
+			remove_country_flag = disabled_tech_cosmogenesis_thesis
+			country_event = {
+				id = mtr_general_event.0
+			}
+		}
+	}
+	option = {
+		name = BACK
 	}
 }
 

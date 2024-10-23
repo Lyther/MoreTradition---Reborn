@@ -562,3 +562,21 @@ tradition_mtr_crisis = {
 	}
 	ai_weight = { factor = 0 }
 }
+
+#同化
+tradition_mtr_assimilate = {
+	tree_template = "tree_mt_11111"
+	adoption_bonus = "tr_mtr_assimilate_adopt"
+	finish_bonus = "tr_mtr_assimilate_finish"
+	traditions = {
+		"tr_mtr_assimilate_1"
+		"tr_mtr_assimilate_2"
+		"tr_mtr_assimilate_3"
+		"tr_mtr_assimilate_4"
+		"tr_mtr_assimilate_5"
+	}
+	potential = { 
+		always = yes
+	}
+	ai_weight = { factor = 0 }
+}

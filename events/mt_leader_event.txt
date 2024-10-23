@@ -107,6 +107,14 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = BACK
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.0
+			}
+		}
+	}
 }
 #特殊培养-选择领袖类型
 country_event = {
@@ -264,6 +272,14 @@ country_event = {
 		}
 		country_event = {
 			id = mt_leader_event.7
+		}
+	}
+	option = {
+		name = BACK
+		hidden_effect = {
+			country_event = {
+				id = mtr_general_event.0
+			}
 		}
 	}
 }

@@ -1,0 +1,28 @@
+living_standard_mtr_assimilation = {
+	potential = {
+		OR = {
+			has_utopia = yes
+			has_synthetic_dawn = yes
+			has_machine_age_dlc = yes
+		}
+		exists = from
+		from = {
+			has_tradition = "tr_mtr_assimilate_finish"
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
