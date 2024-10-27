@@ -135,3 +135,6 @@
  living_standard_mtr_assimilation: "Advanced Assimilation"
  living_standard_mtr_assimilation_tooltip: "Prevents happiness loss when assimilating species."
  living_standard_mtr_assimilation_tooltip_delayed: "Requires $tr_mtr_assimilate_finish$, only affects species currently being assimilated."
+ living_standard_mtr_basic_assimilation: "Basic Assimilation"
+ living_standard_mtr_basic_assimilation_tooltip: "Can assimilate almost all species."
+ living_standard_mtr_basic_assimilation_tooltip_delayed: "Requires $tr_mtr_assimilate_adopt$, only effective for species currently being assimilated."

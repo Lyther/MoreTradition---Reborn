@@ -10,18 +10,58 @@ living_standard_mtr_assimilation = {
 			has_tradition = "tr_mtr_assimilate_finish"
 		}
 	}
-
 	allow = {
 		hidden_trigger = { exists = from }
 		custom_tooltip = {
 			fail_text = SPECIES_MUST_BE_ASSIMILATING
-			has_citizenship_type = {
-				type = citizenship_assimilation
-				country = from
+			OR = {
+				has_citizenship_type = {
+					type = citizenship_assimilation
+					country = from
+				}
+				has_citizenship_type = {
+					type = citizenship_mtr_assimilation
+					country = from
+				}
 			}
 		}
 	}
+	ai_will_do = {
+		factor = 0
+	}
+}
 
+living_standard_mtr_basic_assimilation = {
+	potential = {
+		OR = {
+			has_utopia = yes
+			has_synthetic_dawn = yes
+			has_machine_age_dlc = yes
+		}
+		exists = from
+		from = {
+			has_tradition = "tr_mtr_assimilate_finish"
+		}
+	}
+	modifier = {
+		pop_happiness = -0.25
+	}
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			OR = {
+				has_citizenship_type = {
+					type = citizenship_assimilation
+					country = from
+				}
+				has_citizenship_type = {
+					type = citizenship_mtr_assimilation
+					country = from
+				}
+			}
+		}
+	}
 	ai_will_do = {
 		factor = 0
 	}

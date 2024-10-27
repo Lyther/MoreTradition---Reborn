@@ -125,3 +125,6 @@
  living_standard_mtr_assimilation: "先进同化"
  living_standard_mtr_assimilation_tooltip: "在同化物种时不会损失人口幸福度。"
  living_standard_mtr_assimilation_tooltip_delayed: "需要$tr_mtr_assimilate_finish$，只对正在进行同化的物种生效。"
+ living_standard_mtr_basic_assimilation: "基础同化"
+ living_standard_mtr_basic_assimilation_tooltip: "可以同化几乎所有的物种。"
+ living_standard_mtr_basic_assimilation_tooltip_delayed: "需要$tr_mtr_assimilate_adopt$，只对正在进行同化的物种生效。"
