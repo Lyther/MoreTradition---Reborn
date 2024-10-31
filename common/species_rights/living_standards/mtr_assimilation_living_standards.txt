@@ -19,10 +19,6 @@ living_standard_mtr_assimilation = {
 					type = citizenship_assimilation
 					country = from
 				}
-				has_citizenship_type = {
-					type = citizenship_mtr_assimilation
-					country = from
-				}
 			}
 		}
 	}
@@ -40,7 +36,7 @@ living_standard_mtr_basic_assimilation = {
 		}
 		exists = from
 		from = {
-			has_tradition = "tr_mtr_assimilate_finish"
+			has_tradition = "tr_mtr_assimilate_adopt"
 		}
 	}
 	modifier = {
@@ -53,10 +49,6 @@ living_standard_mtr_basic_assimilation = {
 			OR = {
 				has_citizenship_type = {
 					type = citizenship_assimilation
-					country = from
-				}
-				has_citizenship_type = {
-					type = citizenship_mtr_assimilation
 					country = from
 				}
 			}

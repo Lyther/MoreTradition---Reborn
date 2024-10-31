@@ -63,7 +63,7 @@ guiTypes = {
 	# │└─┘   └─┘ 1│
 	# └───────────┘
 	containerWindowType = {
-		name = "tree_mtr_11_111"
+		name = "tree_mtr_11_000"
 		position = { x = @pos_c3x y = @pos_r2y }
 		iconType = {
 			name = "arrow_1"
@@ -89,6 +89,51 @@ guiTypes = {
 		iconType = {
 			name = "tree_mtr_11_111_tradition_5"
 			position = { x = @tr_c23x y = @tr_r2y }
+		}
+	}
+}
+
+guiTypes = {
+	# ┌───────────┐
+	# │┌─┐ ┌─┐ ┌─┐│
+	# ││ │ │ │ │ ││
+	# │└┬┘ └┬┘ └─┘│
+	# │┌▼┐ ┌▼┐    │
+	# ││ │ │ │    │
+	# │└─┘ └─┘   2│
+	# └───────────┘
+	containerWindowType = {
+		name = "tree_mtr_11_11_0"
+		position = { x = @pos_c3x y = @pos_r2y }
+		iconType = {
+			name = "arrow_1"
+			spriteType = "GFX_arrow_single"
+			position = { x = @ar_c1x y = @ar_r1y }
+		}
+		iconType = {
+			name = "arrow_2"
+			spriteType = "GFX_arrow_single"
+			position = { x = @ar_c2x y = @ar_r1y }
+		}
+		iconType = {
+			name = "tree_mtr_11_11_0_tradition_1"
+			position = { x = @tr_c1x y = @tr_r1y }
+		}
+		iconType = {
+			name = "tree_mtr_11_11_0_tradition_2"
+			position = { x = @tr_c1x y = @tr_r2y }
+		}
+		iconType = {
+			name = "tree_mtr_11_11_0_tradition_3"
+			position = { x = @tr_c2x y = @tr_r1y }
+		}
+		iconType = {
+			name = "tree_mtr_11_11_0_tradition_4"
+			position = { x = @tr_c2x y = @tr_r2y }
+		}
+		iconType = {
+			name = "tree_mtr_11_11_0_tradition_5"
+			position = { x = @tr_c3x y = @tr_r1y }
 		}
 	}
 }
